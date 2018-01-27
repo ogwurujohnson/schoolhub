@@ -1,81 +1,4 @@
-﻿<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="zxx" ng-app="schoolApp">
-	
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="robots" content="index,follow">
-
-	<title>School Hub</title>
-
-	<!-- Bootstrap Core CSS -->
-	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-	
-	<!-- Bootstrap Select Option css -->
-	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-select.min.css">
-	
-	<!-- Slick Slider -->
-	<link href="assets/plugins/slick-slider/slick.css" rel="stylesheet">
-	
-	<!-- Icons -->
-	<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet">
-	<link href="assets/plugins/themify-icons/css/themify-icons.css" rel="stylesheet">
-	<link href="assets/plugins/line-icons/css/line-font.css" rel="stylesheet">
-	
-	<!-- Animate -->
-	<link href="assets/plugins/animate/animate.css" rel="stylesheet">
-	
-	<!-- Bootsnav -->
-	<link href="assets/plugins/bootstrap/css/bootsnav.css" rel="stylesheet">
-	
-	<!-- Custom style -->
-	<link href="assets/css/style.css" rel="stylesheet">
-	<link href="assets/css/responsiveness.css" rel="stylesheet">
-	<link  type="text/css" rel="stylesheet" id="jssDefault" href="assets/css/colors/main.css">
-	<script src="assets/js/angular.min.js"></script>
-	<script src="assets/js/angular-route.js"></script>
-	<script src="assets/js/routing.js"></script>
-	<script src="assets/js/app.js"></script>
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	  <script src="js/html5shiv.min.js"></script>
-	  <script src="js/respond.min.js"></script>
-	<![endif]-->
-	
-	</head>
-	<body class="home-2">
-		<div class="wrapper">  
-			<!-- Start Navigation -->
-			<nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav">
-				<div class="container-fluid">         
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-						<i class="ti-align-left"></i>
-					</button>
-					
-					<!-- Start Header Navigation -->
-					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">
-							<img src="assets/img/logo-white.png" class="logo logo-display" alt="">
-							<img src="assets/img/logo.png" class="logo logo-scrolled" alt="">
-						</a>
-					</div>
-
-					
-				</div>   
-			</nav>
-			<!-- End Navigation -->
-			<div class="clearfix"></div>
-
-			
-			<!-- Main Banner Section Start -->
+﻿			<!-- Main Banner Section Start -->
 			<div class="banner light-opacity" style="background-image:url(assets/img/slider-1.jpg);">  
 				<div class="container">
 					<div class="banner-caption">
@@ -83,10 +6,9 @@
 							<h1>Review A School <span>Today</span></h1>
 							<p>Now You Have The Opportunity to do something Good for Your Community, help your neighbours kids and your kids to attend the best schools in your Area, while hiding your identity.</p>
 							<div class="banner-btn">
-								<a href="add-school.html" class="btn contact-btn"><i class="ti-plus"></i>Add A School</a>
-								<a href="full-width-grid.html" class="btn listing-btn"><i class="ti-location-pin"></i>Find A School</a>
+								<a href="#!/newSchool" class="btn contact-btn"><i class="ti-plus"></i>Add A School</a>
+								<a href="#!/searchSchool" class="btn listing-btn"><i class="ti-location-pin"></i>Find A School</a>
 							</div>
-							
 						</div>
 					</div>
 				</div>
@@ -145,7 +67,7 @@
 					<div class="row">
 						<div class="col-md-4 col-sm-6">
 							<div class="listing-shot grid-style">
-								<a href="listing-detail.html">
+								<a href="#!/schoolDetails">
 									<div class="listing-shot-img">
 										<img src="assets/img/category/slider-2.jpg" class="img-responsive" alt="">
 										<span class="like-listing"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
@@ -184,7 +106,7 @@
 						
 						<div class="col-md-4 col-sm-6">
 							<div class="listing-shot grid-style">
-								<a href="listing-detail.html">
+								<a href="#!/schoolDetails">
 									<div class="listing-shot-img">
 										<img src="assets/img/category/place-2.jpg" class="img-responsive" alt="">
 										<span class="like-listing"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
@@ -220,10 +142,10 @@
 								</div>
 							</div>
 						</div>
-						<!-- -->
+						
 						<div class="col-md-4 col-sm-6">
 							<div class="listing-shot grid-style">
-								<a href="listing-detail.html">
+								<a href="#!/schoolDetails">
 									<div class="listing-shot-img">
 										<img src="assets/img/category/place-4.jpg" class="img-responsive" alt="">
 										<span class="like-listing"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
@@ -263,68 +185,3 @@
 				</div>
 			</section>
 			<!-- End Popular Listing Section -->
-
-<div ng-view=""></div>
-
-			
-			
-			
-			
-			
-			
-			
-			<!-- ================ Start Footer ======================= -->
-			<footer class="footer dark-bg">
-				<div class="footer-copyright">
-					<p>Copyright@ 2017 School Hub Design By <a href="#" title="School Hub" target="_blank">Team We Grey</a></p>
-				</div>
-			</footer>
-			<!-- ================ End Footer Section ======================= -->
-			
-			
-			
-			
-
-			
-			<!-- START JAVASCRIPT -->
-			<!-- Jquery js-->
-			<script src="assets/js/jquery.min.js"></script>
-			
-			<!-- Bootstrap js-->
-			<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-			
-			<!-- Bootsnav js-->
-			<script src="assets/plugins/bootstrap/js/bootsnav.js"></script>
-			<script src="assets/js/viewportchecker.js"></script>
-			
-			<!-- Slick Slider js-->
-			<script src="assets/plugins/slick-slider/slick.js"></script>
-			
-			<!-- counter js-->
-			<script src="assets/plugins/jquery-counter/js/waypoints.min.js"></script>
-			<script src="assets/plugins/jquery-counter/js/jquery.counterup.min.js"></script>
-			
-			<script src="assets/js/jQuery.style.switcher.js"></script>
-			
-			<!-- Custom Js -->
-			<script src="assets/js/custom.js"></script>
-			
-			<script>
-				function openRightMenu() {
-					document.getElementById("rightMenu").style.display = "block";
-				}
-				function closeRightMenu() {
-					document.getElementById("rightMenu").style.display = "none";
-				}
-			</script>
-			
-			<script type="text/javascript">
-				$(document).ready(function() {
-					$('#styleOptions').styleSwitcher();
-				});
-			</script>
-			
-		</div>
-	</body>
-
-</html>
