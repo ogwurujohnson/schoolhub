@@ -1,6 +1,7 @@
 var app = angular.module('schoolHubDAO', []);
 app.factory('schoolhub', function ($http) {
     var schoolhubObject = {};
+    var response = null;
     schoolhubObject.getAllSchools = function () {
         return {};
     };
@@ -17,10 +18,15 @@ app.factory('schoolhub', function ($http) {
         return {};
     };
     schoolhubObject.addReview = function (formData) {
-        return {}
+        return {};
     };
     schoolhubObject.addNewSchool = function (formData) {
-        return {}
+        $http.post('api/visitor/addNewSchool', formData).then(function (data) {
+            return data;
+        }, function (error) {
+            console.log(error);
+            return false;
+        });
     };
     return schoolhubObject;
 });

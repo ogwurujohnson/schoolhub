@@ -1,18 +1,24 @@
 var app = angular.module('schoolApp',['schoolRouting','schoolHubDAO']);
-app.controller('schoolController', function ($scope, $rootScope) {
-    $rootScope.schoolData = [];
-    this.newSchool = [];
+app.controller('schoolController', function ($scope, schoolhub) {
     this.createSchool = function () {
         this.newSchool = {
             "name": $scope.schoolname,
+            "category":$scope.schoolcategory,
+            "cacnumber":$scope.schoolcacnumber,
+            "website":$scope.schoolwebsite,
             "email": $scope.schoolemail,
             "address": $scope.schooladdress,
-            "phone": $scope.schoolphone,
-            "cac": $scope.schoolcac,
-            "description":$scope.schooldescription
+            "phonenumber": $scope.schoolphonenumber,
+            "description":$scope.schooldescription,
+            "country":$scope.schoolcountry,
+            "image":'',
+            "facilities":$scope.facilities1,
+            "openingtime":$scope.schoolopeningtime,
+            "closingtime":$scope.schoolclosingtime
         };
-        $rootScope.schoolData.push(this.newSchool);
-        console.log($rootScope.schoolData);
+        if(schoolhub.addNewSchool(this.newSchool)){
+            alert("School Registered Successfully!");
+        }
     };
 });
 

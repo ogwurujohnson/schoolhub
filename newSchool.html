@@ -1,5 +1,5 @@
 <!-- ================ Start Page Title ======================= -->
-<div ng-controller="schoolController">
+<div ng-controller="schoolController as schoolctrl">
 			<section class="title-transparent page-title" style="background:url(assets/img/title-bg.jpg);">
 				<div class="container">
 					<div class="title-content">
@@ -20,34 +20,42 @@
 				<div class="container">
 					<div class="col-md-10 col-sm-12 col-md-offset-1 mob-padd-0">
 						<!-- General Information -->
+                        <form method="post" ng-submit="schoolctrl.createSchool()">
 						<div class="add-listing-box general-info mrg-bot-25 padd-bot-30 padd-top-25">
 							<div class="listing-box-header">
 								<i class="ti-files theme-cl"></i>
 								<h3>General Information</h3>
 								<p>Write something general information about your school</p>
+								<p>*fields are mandatory</p>
 							</div>
-							<form>
 								<div class="row mrg-r-10 mrg-l-10">
 									<div class="col-sm-6">
-										<label>School Name</label>
-										<input type="text" class="form-control">
+										<label>School Name*</label>
+										<input type="text" class="form-control" required ng-model="schoolname">
 									</div>
 									
 									<div class="col-sm-6">
-										<label>Category</label>
-										<select data-placeholder="Choose Category" class="form-control chosen-select" tabindex="2">
-											<option>Select</option>
-											<option>University</option>
-											<option>Polytechnic</option>
-											
+										<label>Category*</label>
+										<select data-placeholder="Choose Category" class="form-control chosen-select" tabindex="2" required ng-model="schoolcategory">
+											<option disabled selected>Select</option>
+                                            <option value="1">Primary</option>
+                                            <option value="2">Secondary
+                                            <option value="1">Polytechnic</option>
+											<option value="2">University</option>
 										</select>
 									</div>
+
+                                    <div class="col-sm-6">
+                                        <label>CAC Number*</label>
+                                        <input type="text" class="form-control" required ng-model="schoolcacnumber">
+                                    </div>
+
 									<div class="col-sm-6">
 										<label>Website</label>
-										<input type="text" class="form-control">
+										<input type="text" class="form-control" ng-model="schoolwebsite" value="-">
 									</div>
 								</div>
-							</form>
+
 						</div>
 						<!-- End General Information -->
 						
@@ -56,43 +64,22 @@
 							<div class="listing-box-header">
 								<i class="ti-location-pin theme-cl"></i>
 								<h3>Add Location</h3>
-								<p>Write Address Information about your listing Location</p>
+								<p>Write address information about your school Location</p>
 							</div>
-							<form>
 								<div class="row mrg-r-10 mrg-l-10">
 									<div class="col-sm-6">
-										<label>Address</label>
-										<input type="text" class="form-control">
+										<label>Address*</label>
+										<input type="text" class="form-control" required ng-model="schooladdress">
 									</div>
 									
 									<div class="col-sm-6">
-										<label>City</label>
-										<select data-placeholder="Choose City" class="form-control chosen-select" tabindex="2">
-											<option>New York</option>
-											<option>Los Angeles</option>
-											<option>Chicago</option>
-											<option>Phoenix</option>
+										<label>Country*</label>
+										<select data-placeholder="Choose Country" class="form-control chosen-select" tabindex="2" required ng-model="schoolcountry">
+                                            <option disabled selected>Select</option>
+                                            <option>Nigeria</option>
 										</select>
-									</div>
-									<div class="col-sm-6">
-										<label>State</label>
-										<select data-placeholder="Choose Sate" class="form-control chosen-select" tabindex="2">
-											<option>New York</option>
-											<option>Los Angeles</option>
-											<option>Chicago</option>
-											<option>Phoenix</option>
-										</select>
-									</div>
-									<div class="col-sm-6">
-										<label>Country</label>
-										<input type="text" class="form-control">
-									</div>
-									<div class="col-sm-6">
-										<label>Postal-Code</label>
-										<input type="text" class="form-control">
 									</div>
 								</div>
-							</form>
 						</div>
 						<!-- End Add Location -->
 						
@@ -101,38 +88,22 @@
 							<div class="listing-box-header">
 								<i class="ti-write theme-cl"></i>
 								<h3>Full Details</h3>
-								<p>Write full detail information about listing Owner</p>
+								<p>Write full detailed information about your school</p>
 							</div>
-							<form>
 								<div class="row mrg-r-10 mrg-l-10">
 									<div class="col-sm-6">
-										<label>Owner Name</label>
-										<input type="text" class="form-control">
+										<label>Email*</label>
+										<input type="text" class="form-control" required ng-model="schoolemail">
 									</div>
-									
 									<div class="col-sm-6">
-										<label>Email</label>
-										<input type="text" class="form-control">
+										<label>Phone*</label>
+										<input type="text" class="form-control" required ng-model="schoolphonenumber">
 									</div>
-									
-									<div class="col-sm-6">
-										<label>Phone</label>
-										<input type="text" class="form-control">
-									</div>
-									
-									
-									<div class="col-sm-6">
-										<label>Owner Designation</label>
-										<input type="text" class="form-control">
-									</div>
-									
 									<div class="col-sm-12">
 										<label>Description</label>
-										<textarea class="h-100 form-control"></textarea>
+										<textarea class="h-100 form-control" ng-model="schooldescription"></textarea>
 									</div>
-									
 								</div>
-							</form>
 						</div>
 						<!-- End Full Information -->
 						
@@ -140,15 +111,15 @@
 						<div class="add-listing-box full-detail mrg-bot-25 padd-bot-30 padd-top-25">
 							<div class="listing-box-header">
 								<i class="ti-gallery theme-cl"></i>
-								<h3>Add Gallery</h3>
-								<p>Write full detail information about listing Owner</p>
+								<h3>Add Image</h3>
 							</div>
-							<form action="http://themezhub.com/upload-target" class="dropzone dz-clickable primary-dropzone">
+							<div class="dropzone dz-clickable primary-dropzone">
 								<div class="dz-default dz-message">
 									<i class="ti-gallery"></i>
-									<span>Drag & Drop To Change Logo</span>
+                                    <input ng-model="schoolimage" type="file" class="form-control" accept="image/*" ng-change="uploadFile(this)">
+                                    <img ng-src="{{image_source}}" class="img-responsive" />
 								</div>
-							</form>
+							</div>
 						</div>
 						<!-- End Add Gallery Information -->
 						
@@ -156,97 +127,27 @@
 						<div class="add-listing-box amenities mrg-bot-25 padd-bot-30 padd-top-25">
 							<div class="listing-box-header">
 								<i class="ti-gift theme-cl"></i>
-								<h3>Amenities</h3>
-								<p>Write something general information about your listing</p>
+								<h3>Facilities</h3>
 							</div>
-							<form>
 								<div class="row mrg-r-10 mrg-l-10">
 									<div class="col-sm-4">
 										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select1">
+											<input type="checkbox" id="select1" ng-model="schoolfacilities1" />
 											<label for="select1"></label>
-											Alarm system
+											Science Laboratory
 										</span>
 										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select2">
+											<input type="checkbox" id="select2" ng-model="schoolfacilities2" />
 											<label for="select2"></label>
-											Depanneur in building 
+											Football Field
 										</span>
 										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select3">
+											<input type="checkbox" id="select3" ng-model="schoolfacilities3" />
 											<label for="select3"></label>
-											Onsite management   
-										</span>
-										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select4">
-											<label for="select4"></label>
-											Janitor   
-										</span>
-										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select5">
-											<label for="select5"></label>
-											Security cameras  
+											Basketball Field
 										</span>
 									</div>
-									
-									<div class="col-sm-4">
-										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select6">
-											<label for="select6"></label>
-											dLaundry room in building   
-										</span>
-										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select7">
-											<label for="select7"></label>
-											Door attendant  
-										</span>
-										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select8">
-											<label for="select8"></label>
-											Street parking  
-										</span>
-										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select9">
-											<label for="select9"></label>
-											Intercom   
-										</span>
-										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select10">
-											<label for="select10"></label>
-											Attached garage
-										</span>
-									</div>
-									
-									<div class="col-sm-4">
-										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select11">
-											<label for="select11"></label>
-											Elevator 
-										</span>
-										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select12">
-											<label for="select12"></label>
-											Wheelchair accessible 
-										</span>
-										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select13">
-											<label for="select13"></label>
-											Heating   
-										</span>
-										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select14">
-											<label for="select14"></label>
-											Hot water  
-										</span>
-										<span class="custom-checkbox d-block">
-											<input type="checkbox" id="select15">
-											<label for="select15"></label>
-											Electricity   
-										</span>
-									</div>
-									
 								</div>
-							</form>
 						</div>
 						<!-- End Amenities Information -->
 						
@@ -255,93 +156,82 @@
 							<div class="listing-box-header">
 								<i class="ti-time theme-cl"></i>
 								<h3>Opening Hours</h3>
-								<p>Write something general information about your listing</p>
 							</div>
-							<form>
 								<div class="row mrg-r-10 mrg-l-10">
 									<div class="col-sm-12 mob-padd-0">
-										
-										
 										<div class="form-group">
 											<label class="control-label col-md-2">Monday-Friday</label>
 											<div class="col-md-5">
-												<select data-placeholder="Choose Time" name = "txtopen_time" class="form-control chosen-select" tabindex="2">
-													<option>Opening Time</option>
-													<option>1 :00 AM</option>
-													<option>2 :00 AM</option>
-													<option>3 :00 AM</option>
-													<option>4 :00 AM</option>
-													<option>5 :00 AM</option>
-													<option>6 :00 AM</option>
-													<option>7 :00 AM</option>
-													<option>8 :00 AM</option>
-													<option>9 :00 AM</option>
-													<option>10 :00 AM</option>
-													<option>11 :00 AM</option>
-													<option>12 :00 AM</option>
-													<option>1 :00 PM</option>
-													<option>2 :00 PM</option>
-													<option>3 :00 PM</option>
-													<option>4 :00 PM</option>
-													<option>5 :00 PM</option>
-													<option>6 :00 PM</option>
-													<option>7 :00 PM</option>
-													<option>8 :00 PM</option>
-													<option>9 :00 PM</option>
-													<option>10 :00 PM</option>
-													<option>11 :00 PM</option>
-													<option>12 :00 PM</option>
-													<option>Closed</option>
+												<select data-placeholder="Choose Time" name = "txtopen_time" class="form-control chosen-select" tabindex="2" ng-model="schoolopeningtime">
+													<option disabled selected="selected">Opening Time</option>
+													<option value="1: 00 AM">1 :00 AM</option>
+													<option value="2 :00 AM">2 :00 AM</option>
+													<option value="3 :00 AM">3 :00 AM</option>
+													<option value="4 :00 AM">4 :00 AM</option>
+													<option value="5 :00 AM">5 :00 AM</option>
+													<option value="6 :00 AM">6 :00 AM</option>
+													<option value="7 :00 AM">7 :00 AM</option>
+													<option value="8 :00 AM">8 :00 AM</option>
+													<option value="9 :00 AM">9 :00 AM</option>
+													<option value="10 :00 AM">10 :00 AM</option>
+													<option value="11 :00 AM">11 :00 AM</option>
+													<option value="12 :00 AM">12 :00 AM</option>
+													<option value="1 :00 PM">1 :00 PM</option>
+													<option value="2 :00 PM">2 :00 PM</option>
+													<option value="3 :00 PM">3 :00 PM</option>
+													<option value="4 :00 PM">4 :00 PM</option>
+													<option value="5 :00 PM">5 :00 PM</option>
+													<option value="6 :00 PM">6 :00 PM</option>
+													<option value="7 :00 PM">7 :00 PM</option>
+													<option value="8 :00 PM">8 :00 PM</option>
+													<option value="9 :00 PM">9 :00 PM</option>
+													<option value="10 :00 PM">10 :00 PM</option>
+													<option value="11 :00 PM">11 :00 PM</option>
+													<option value="12 :00 PM">12 :00 PM</option>
+													<option value="Closed">Closed</option>
 												</select>
 											</div>
 											<div class="col-md-5">
-												<select data-placeholder="Choose Time" name="txtclose_time" class="form-control chosen-select" tabindex="2">
-													<option>Closing Time</option>
-													<option>1 :00 AM</option>
-													<option>2 :00 AM</option>
-													<option>3 :00 AM</option>
-													<option>4 :00 AM</option>
-													<option>5 :00 AM</option>
-													<option>6 :00 AM</option>
-													<option>7 :00 AM</option>
-													<option>8 :00 AM</option>
-													<option>9 :00 AM</option>
-													<option>10 :00 AM</option>
-													<option>11 :00 AM</option>
-													<option>12 :00 AM</option>
-													<option>1 :00 PM</option>
-													<option>2 :00 PM</option>
-													<option>3 :00 PM</option>
-													<option>4 :00 PM</option>
-													<option>5 :00 PM</option>
-													<option>6 :00 PM</option>
-													<option>7 :00 PM</option>
-													<option>8 :00 PM</option>
-													<option>9 :00 PM</option>
-													<option>10 :00 PM</option>
-													<option>11 :00 PM</option>
-													<option>12 :00 PM</option>
-													<option>Closed</option>
+												<select data-placeholder="Choose Time" name="txtclose_time" class="form-control chosen-select" tabindex="2" ng-model="schoolclosingtime">
+                                                    <option disabled selected="selected">Closing Time</option>
+                                                    <option value="1: 00 AM">1 :00 AM</option>
+                                                    <option value="2 :00 AM">2 :00 AM</option>
+                                                    <option value="3 :00 AM">3 :00 AM</option>
+                                                    <option value="4 :00 AM">4 :00 AM</option>
+                                                    <option value="5 :00 AM">5 :00 AM</option>
+                                                    <option value="6 :00 AM">6 :00 AM</option>
+                                                    <option value="7 :00 AM">7 :00 AM</option>
+                                                    <option value="8 :00 AM">8 :00 AM</option>
+                                                    <option value="9 :00 AM">9 :00 AM</option>
+                                                    <option value="10 :00 AM">10 :00 AM</option>
+                                                    <option value="11 :00 AM">11 :00 AM</option>
+                                                    <option value="12 :00 AM">12 :00 AM</option>
+                                                    <option value="1 :00 PM">1 :00 PM</option>
+                                                    <option value="2 :00 PM">2 :00 PM</option>
+                                                    <option value="3 :00 PM">3 :00 PM</option>
+                                                    <option value="4 :00 PM">4 :00 PM</option>
+                                                    <option value="5 :00 PM">5 :00 PM</option>
+                                                    <option value="6 :00 PM">6 :00 PM</option>
+                                                    <option value="7 :00 PM">7 :00 PM</option>
+                                                    <option value="8 :00 PM">8 :00 PM</option>
+                                                    <option value="9 :00 PM">9 :00 PM</option>
+                                                    <option value="10 :00 PM">10 :00 PM</option>
+                                                    <option value="11 :00 PM">11 :00 PM</option>
+                                                    <option value="12 :00 PM">12 :00 PM</option>
+                                                    <option value="Closed">Closed</option>
 												</select>
 											</div>
 										</div>
-										
-										
-										
-										
-
 									</div>
 								</div>
-							</form>
 						</div>
 						<!-- End Opening Hours Information -->
-						
 						<div class="text-center">
-							<a href="#" class="btn theme-btn" title="Submit Listing">Submit School</a>
+							<button class="btn theme-btn" title="Submit Listing">Submit School</button>
 						</div>
+                        </form>
 					</div>
-					
 				</div>
 			</section>
-</div>
+        </div>
 			<!-- ================ End Add Listing Section ======================= -->
