@@ -1,4 +1,4 @@
-var app = angular.module('schoolApp',['schoolRouting']);
+var app = angular.module('schoolApp',['schoolRouting','schoolHubDAO']);
 app.controller('schoolController', function ($scope, $rootScope) {
     $rootScope.schoolData = [];
     this.newSchool = [];
