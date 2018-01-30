@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c400262e-5856-445d-8943-6a16b449f524" name="Default" comment="Database">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/school_hub.sql" />
+    <list default="true" id="c400262e-5856-445d-8943-6a16b449f524" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/school_hub.sql" afterPath="$PROJECT_DIR$/school_hub.sql" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +14,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+            <state relative-caret-position="408">
+              <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular-route.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/angular-route.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/angular.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -27,8 +47,8 @@
       <file leaf-file-name="visitor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/api/visitor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3024">
-              <caret line="131" column="83" lean-forward="false" selection-start-line="131" selection-start-column="83" selection-end-line="131" selection-end-column="83" />
+            <state relative-caret-position="2784">
+              <caret line="121" column="46" lean-forward="false" selection-start-line="121" selection-start-column="46" selection-end-line="121" selection-end-column="46" />
               <folding>
                 <marker date="1517171205737" expanded="true" signature="651:674" ph="SELECT * FRO... tblschool" />
                 <marker date="1517171205737" expanded="true" signature="981:1006" ph="SELECT * FRO... tblcategory" />
@@ -44,16 +64,6 @@
       </file>
       <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/custom.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/init.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -85,8 +95,8 @@
       <file leaf-file-name="newSchool.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newSchool.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="144" column="107" lean-forward="true" selection-start-line="144" selection-start-column="107" selection-end-line="144" selection-end-column="107" />
+            <state relative-caret-position="3456">
+              <caret line="144" column="107" lean-forward="false" selection-start-line="144" selection-start-column="107" selection-end-line="144" selection-end-column="107" />
               <folding>
                 <marker date="1517171917961" expanded="true" signature="11148:11163" ph="..." />
               </folding>
@@ -94,11 +104,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="factory.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="factory.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/factory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="384">
+              <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/routing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -180,7 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -215,6 +234,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,7 +274,9 @@
       <workItem from="1517107343622" duration="6793000" />
       <workItem from="1517151070363" duration="10053000" />
       <workItem from="1517161441930" duration="10481000" />
-      <workItem from="1517172429047" duration="1674000" />
+      <workItem from="1517172429047" duration="2354000" />
+      <workItem from="1517243698754" duration="1976000" />
+      <workItem from="1517278109629" duration="656000" />
     </task>
     <task id="LOCAL-00001" summary="Angular routing and controllers">
       <created>1517036166611</created>
@@ -284,11 +306,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517173226744</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Database">
+      <created>1517174160262</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1517174160262</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33281000" />
+    <option name="totallyTimeSpent" value="36593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="151" width="1366" height="741" extended-state="6" />
@@ -297,12 +326,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -337,7 +366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="109" lean-forward="false" selection-start-line="10" selection-start-column="109" selection-end-line="10" selection-end-column="109" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -427,7 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -483,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -553,7 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -607,20 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/angular.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/angular-route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/schoolDetails.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -635,19 +646,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/routing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="109" lean-forward="false" selection-start-line="10" selection-start-column="109" selection-end-line="10" selection-end-column="109" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -690,34 +691,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api/visitor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3024">
-          <caret line="131" column="83" lean-forward="false" selection-start-line="131" selection-start-column="83" selection-end-line="131" selection-end-column="83" />
-          <folding>
-            <marker date="1517171205737" expanded="true" signature="651:674" ph="SELECT * FRO... tblschool" />
-            <marker date="1517171205737" expanded="true" signature="981:1006" ph="SELECT * FRO... tblcategory" />
-            <marker date="1517171205737" expanded="true" signature="1345:1398" ph="SELECT repor... tblreport" />
-            <marker date="1517171205737" expanded="true" signature="1744:2027" ph="SELECT tblsc... tblschool" />
-            <marker date="1517171205737" expanded="true" signature="2326:2349" ph="SELECT * FRO... tblreport" />
-            <marker date="1517171205737" expanded="true" signature="3040:3130" ph="INSERT INTO tblreport... " />
-            <marker date="1517171205737" expanded="true" signature="4265:4457" ph="INSERT INTO tblschool... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/factory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newSchool.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="144" column="107" lean-forward="true" selection-start-line="144" selection-start-column="107" selection-end-line="144" selection-end-column="107" />
+        <state relative-caret-position="3456">
+          <caret line="144" column="107" lean-forward="false" selection-start-line="144" selection-start-column="107" selection-end-line="144" selection-end-column="107" />
           <folding>
             <marker date="1517171917961" expanded="true" signature="11148:11163" ph="..." />
           </folding>
@@ -734,8 +711,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        <state relative-caret-position="408">
+          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/angular-route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/routing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api/visitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2784">
+          <caret line="121" column="46" lean-forward="false" selection-start-line="121" selection-start-column="46" selection-end-line="121" selection-end-column="46" />
+          <folding>
+            <marker date="1517171205737" expanded="true" signature="651:674" ph="SELECT * FRO... tblschool" />
+            <marker date="1517171205737" expanded="true" signature="981:1006" ph="SELECT * FRO... tblcategory" />
+            <marker date="1517171205737" expanded="true" signature="1345:1398" ph="SELECT repor... tblreport" />
+            <marker date="1517171205737" expanded="true" signature="1744:2027" ph="SELECT tblsc... tblschool" />
+            <marker date="1517171205737" expanded="true" signature="2326:2349" ph="SELECT * FRO... tblreport" />
+            <marker date="1517171205737" expanded="true" signature="3040:3130" ph="INSERT INTO tblreport... " />
+            <marker date="1517171205737" expanded="true" signature="4265:4457" ph="INSERT INTO tblschool... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
           <folding />
         </state>
       </provider>
