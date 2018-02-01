@@ -1,18 +1,38 @@
 var app = angular.module('schoolHubDAO', []);
-app.factory('schoolhub', function ($http) {
+app.factory('schoolhub', function ($http, $rootScope) {
     var schoolhubObject = {};
-    var response = null;
+
     schoolhubObject.getAllSchools = function () {
-        return {};
+        $http.get('api/visitor/allschools').then(function (data) {
+            $rootScope.allschools = data.data;
+            console.log($rootScope.allschools);
+            return data;
+        }, function (error) {
+            console.log(error);
+            return false;
+        });
     };
     schoolhubObject.getAllSchoolCategories = function () {
-        return {};
+        $http.get('api/visitor/allschoolcategories').then(function (data) {
+            $rootScope.schoolCategories = data.data;
+            return data;
+        }, function (error) {
+            console.log(error);
+            return false;
+        });
     };
     schoolhubObject.getSchoolReport = function(id){
         return {};
     };
     schoolhubObject.getParticularSchoolDetails = function (id) {
-        return {};
+        $http.get('api/visitor/getparticularschooldetails/'+id).then(function (data) {
+            $rootScope.singleSchool = data.data;
+            console.log($rootScope.singleSchool);
+            return data;
+        }, function (error) {
+            console.log(error);
+            return false;
+        });
     };
     schoolhubObject.getAllReport = function () {
         return {};

@@ -1,4 +1,5 @@
 <!-- ================ Start Page Title ======================= -->
+<div ng-controller="schoolController">
 <section class="title-transparent page-title" style="background:url(assets/img/title-bg.jpg);">
 	<div class="container">
 		<div class="title-content">
@@ -20,21 +21,8 @@
 							<div class="white-box white-shadow padd-top-30 padd-bot-30 translateY-60">
 								<h3 class="text-center">Search For Schools</h3>
 								<form class="form-verticle">
-									<div class="col-md-4 col-sm-4 no-padd">
-										<input type="text" class="form-control left-radius" placeholder="Keywords..">
-									</div>
-									<div class="col-md-3 col-sm-3 no-padd">
-										<input type="text" class="form-control" placeholder="Location..">
-									</div>
-									<div class="col-md-3 col-sm-3 no-padd">
-										<select class="selectpicker form-control" data-live-search="true">
-										  <option data-tokens="ketchup mustard">Choose Category</option>
-										  <option data-tokens="mustard">University</option>
-										  <option data-tokens="frosting">Polytechnic</option>
-										</select>
-									</div>
-									<div class="col-md-2 col-sm-2 no-padd">
-										<button type="button" class="btn theme-btn normal-height full-width">Search</button>
+									<div class="col-md-12 col-sm-12 no-padd">
+										<input type="text" class="form-control left-radius" placeholder="Keywords.." ng-model="keyword">
 									</div>
 								</form>
 							</div>
@@ -49,379 +37,55 @@
 				<div class="container">
 					<div class="row mrg-bot-20">
 						<div class="col-md-6">
-							<h5>Sort By</h5>
+							<h5>All Schools</h5>
 						</div>
 						<div class="col-md-6">
 							<div class="layout-option pull-right">
 								<a href="#" class="active" title="Grid Layout"><i class="ti-layout-grid3"></i></a>
-								<a href="#" title="List Layout"><i class="ti-view-list"></i></a>
 							</div>
 						</div>
 					</div>
 					<div class="row">
-							<div class="col-md-4 col-sm-6">
-									<div class="listing-shot grid-style">
-										<div class="listing-badge now-open">Verified</div>
-										<a href="schoolDetails.html">
-											<div class="listing-shot-img">
-												<img src="assets/img/category/place-2.jpg" class="img-responsive" alt="">
-												<span class="approve-listing"><i class="fa fa-check"></i></span>
-											</div>
-											<div class="listing-shot-caption">
-												<h4>University Of Ibadan</h4>
-												<p class="listing-location">Ibadan, Nigeria</p>
-												<span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-											</div>
-										</a>
-										<div class="listing-shot-info">
-											<div class="row extra">
-												<div class="col-md-12">
-													<div class="listing-detail-info">
-														<span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-														<span><i class="fa fa-globe" aria-hidden="true"></i> info@ui.edu.ng</span>
-													</div>
-												</div>
-											</div>
+							<div class="col-md-4 col-sm-6" ng-repeat="school in allschools | filter:keyword">
+								<div class="listing-shot grid-style">
+									<div ng-show="school[7]==1" class="listing-badge now-open">Verified</div>
+									<a href="{{'#!/schoolDetails/'+school[0]}}">
+										<div class="listing-shot-img">
+											<img ng-src="{{school[5]}}" class="img-responsive" alt="">
+											<span ng-show="school[7]==1" class="approve-listing"><i class="fa fa-check"></i></span>
+											<span class="like-listing"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 										</div>
-										<div class="listing-shot-info rating">
-											<div class="row extra">
-												<div class="col-md-7 col-sm-7 col-xs-6">
-													<i class="color fa fa-star" aria-hidden="true"></i>
-													<i class="color fa fa-star" aria-hidden="true"></i>
-													<i class="color fa fa-star" aria-hidden="true"></i>
-													<i class="color fa fa-star-half-o" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-												<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-													<a href="schoolDetails.html" class="detail-link">Rate Now</a>
+										<div class="listing-shot-caption">
+											<h4>{{school[1]}}</h4>
+											<p class="listing-location">{{school[3]+", "+school[4]}}</p>
+										</div>
+									</a>
+									<div class="listing-shot-info">
+										<div class="row extra">
+											<div class="col-md-12">
+												<div class="listing-detail-info">
+													<span><i class="fa fa-phone" aria-hidden="true"></i>{{school[6]}}</span>
+													<span><i class="fa fa-globe" aria-hidden="true"></i>{{school[2]}}</span>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								
-								<div class="col-md-4 col-sm-6">
-									<div class="listing-shot grid-style">
-										<a href="schoolDetails.html">
-											<div class="listing-shot-img">
-												<img src="assets/img/category/place-4.jpg" class="img-responsive" alt="">
+									<div class="listing-shot-info rating">
+										<div class="row extra">
+											<div class="col-md-7 col-sm-7 col-xs-6">
+												<i class="color fa fa-star" aria-hidden="true"></i>
+												<i class="color fa fa-star" aria-hidden="true"></i>
+												<i class="color fa fa-star" aria-hidden="true"></i>
+												<i class="color fa fa-star-half-o" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
 											</div>
-											<div class="listing-shot-caption">
-												<h4>University Of Lagos</h4>
-												<p class="listing-location">lagos, Nigeria</p>
-												<span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-											</div>
-										</a>
-										<div class="listing-shot-info">
-											<div class="row extra">
-												<div class="col-md-12">
-													<div class="listing-detail-info">
-														<span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-														<span><i class="fa fa-globe" aria-hidden="true"></i> info@unilag.edu.ng</span>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="listing-shot-info rating">
-											<div class="row extra">
-												<div class="col-md-7 col-sm-7 col-xs-6">
-													<i class="color fa fa-star" aria-hidden="true"></i>
-													<i class="color fa fa-star" aria-hidden="true"></i>
-													<i class="color fa fa-star" aria-hidden="true"></i>
-													<i class="color fa fa-star-half-o" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-												<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-													<a href="schoolDetails.html" class="detail-link">Rate Now</a>
-												</div>
+											<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
+												<a href="{{'#!/schoolDetails/'+school[0]}}" class="detail-link">Rate Now</a>
 											</div>
 										</div>
 									</div>
 								</div>
-								
-								<div class="col-md-4 col-sm-6">
-									<div class="listing-shot grid-style">
-										<a href="schoolDetails.html">
-											<div class="listing-shot-img">
-												<img src="assets/img/category/slider-2.jpg" class="img-responsive" alt="">
-												<span class="approve-listing"><i class="fa fa-check"></i></span>
-											</div>
-											<div class="listing-shot-caption">
-												<h4>University Of Nigeria</h4>
-												<p class="listing-location">Nsukka, Nigeria</p>
-												<span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-											</div>
-										</a>
-										<div class="listing-shot-info">
-											<div class="row extra">
-												<div class="col-md-12">
-													<div class="listing-detail-info">
-														<span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-														<span><i class="fa fa-globe" aria-hidden="true"></i> info@unn.edu.ng</span>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="listing-shot-info rating">
-											<div class="row extra">
-												<div class="col-md-7 col-sm-7 col-xs-6">
-													<i class="color fa fa-star" aria-hidden="true"></i>
-													<i class="color fa fa-star" aria-hidden="true"></i>
-													<i class="color fa fa-star" aria-hidden="true"></i>
-													<i class="color fa fa-star-half-o" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-												</div>
-												<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-													<a href="schoolDetails.html" class="detail-link">Rate Now</a>
-												</div>
-											</div>
-										</div>
-									</div>
 								</div>
-						
-						<div class="col-md-4 col-sm-6">
-							<div class="listing-shot grid-style">
-								<span class="featured-listing"></span>
-								<a href="schoolDetails.html">
-									<div class="listing-shot-img">
-										<img src="assets/img/category/food-1.jpg" class="img-responsive" alt="">
-										<span class="listing-price">$140</span>
-									</div>
-									<div class="listing-shot-caption">
-										<h4>Food & Restaurants</h4>
-										<p class="listing-location">Bishop Avenue, New York</p>
-										<span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-									</div>
-								</a>
-								<div class="listing-shot-info">
-									<div class="row extra">
-										<div class="col-md-12">
-											<div class="listing-detail-info">
-												<span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-												<span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="listing-shot-info rating">
-									<div class="row extra">
-										<div class="col-md-7 col-sm-7 col-xs-6">
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star-half-o" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</div>
-										<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-											<a href="schoolDetails.html" class="detail-link">Open Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-4 col-sm-6">
-							<div class="listing-shot grid-style">
-								<div class="listing-badge now-open">Now Open</div>
-								<a href="schoolDetails.html">
-									<div class="listing-shot-img">
-										<img src="assets/img/category/instructional.jpg" class="img-responsive" alt="">
-										<span class="approve-listing"><i class="fa fa-check"></i></span>
-									</div>
-									<div class="listing-shot-caption">
-										<h4>Instructional</h4>
-										<p class="listing-location">Bishop Avenue, New York</p>
-										<span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-									</div>
-								</a>
-								<div class="listing-shot-info">
-									<div class="row extra">
-										<div class="col-md-12">
-											<div class="listing-detail-info">
-												<span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-												<span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="listing-shot-info rating">
-									<div class="row extra">
-										<div class="col-md-7 col-sm-7 col-xs-6">
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star-half-o" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</div>
-										<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-											<a href="schoolDetails.html" class="detail-link">Open Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-4 col-sm-6">
-							<div class="listing-shot grid-style">	
-								<span class="featured-listing"></span>
-								<a href="schoolDetails.html">
-									<div class="listing-shot-img">
-										<img src="assets/img/category/sport.jpg" class="img-responsive" alt="">
-										<span class="listing-price">$140</span>
-									</div>
-									<div class="listing-shot-caption">
-										<h4>Sport</h4>
-										<p class="listing-location">Bishop Avenue, New York</p>
-										<span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-									</div>
-								</a>
-								<div class="listing-shot-info">
-									<div class="row extra">
-										<div class="col-md-12">
-											<div class="listing-detail-info">
-												<span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-												<span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="listing-shot-info rating">
-									<div class="row extra">
-										<div class="col-md-7 col-sm-7 col-xs-6">
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star-half-o" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</div>
-										<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-											<a href="schoolDetails.html" class="detail-link">Open Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-4 col-sm-6">
-							<div class="listing-shot grid-style">
-								<a href="schoolDetails.html">
-									<div class="listing-shot-img">
-										<img src="assets/img/category/business.jpg" class="img-responsive" alt="">
-									</div>
-									<div class="listing-shot-caption">
-										<h4>Business</h4>
-										<p class="listing-location">Bishop Avenue, New York</p>
-										<span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-									</div>
-								</a>
-								<div class="listing-shot-info">
-									<div class="row extra">
-										<div class="col-md-12">
-											<div class="listing-detail-info">
-												<span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-												<span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="listing-shot-info rating">
-									<div class="row extra">
-										<div class="col-md-7 col-sm-7 col-xs-6">
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star-half-o" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</div>
-										<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-											<a href="schoolDetails.html" class="detail-link">Open Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-4 col-sm-6">
-							<div class="listing-shot grid-style">
-								<div class="listing-badge now-open">Now Open</div>
-								<a href="schoolDetails.html">
-									<div class="listing-shot-img">
-										<img src="assets/img/category/travel.jpg" class="img-responsive" alt="">
-									</div>
-									<div class="listing-shot-caption">
-										<h4>Travel</h4>
-										<p class="listing-location">Bishop Avenue, New York</p>
-										<span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-									</div>
-								</a>
-								<div class="listing-shot-info">
-									<div class="row extra">
-										<div class="col-md-12">
-											<div class="listing-detail-info">
-												<span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-												<span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="listing-shot-info rating">
-									<div class="row extra">
-										<div class="col-md-7 col-sm-7 col-xs-6">
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star-half-o" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</div>
-										<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-											<a href="schoolDetails.html" class="detail-link">Open Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-4 col-sm-6">
-							<div class="listing-shot grid-style">
-								<span class="featured-listing"></span>
-								<a href="schoolDetails.html">
-									<div class="listing-shot-img">
-										<img src="assets/img/category/shopping.jpg" class="img-responsive" alt="">
-										<span class="listing-price">$140</span>
-										<span class="approve-listing"><i class="fa fa-check"></i></span>
-									</div>
-									<div class="listing-shot-caption">
-										<h4>Shopping</h4>
-										<p class="listing-location">Bishop Avenue, New York</p>
-										<span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-									</div>
-								</a>
-								<div class="listing-shot-info">
-									<div class="row extra">
-										<div class="col-md-12">
-											<div class="listing-detail-info">
-												<span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-												<span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="listing-shot-info rating">
-									<div class="row extra">
-										<div class="col-md-7 col-sm-7 col-xs-6">
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star" aria-hidden="true"></i>
-											<i class="color fa fa-star-half-o" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</div>
-										<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-											<a href="schoolDetails.html" class="detail-link">Open Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 					<!-- Start Pagination -->
 					<div class="row">
@@ -429,11 +93,11 @@
 							<div class="bs-example">
 								<ul class="pagination">
 									<li><a href="#">&laquo;</a></li>
-									<li><a href="#">1</a></li>
+<!--								<li><a href="#">1</a></li>
 									<li><a href="#">2</a></li>
 									<li><a href="#">3</a></li>
 									<li><a href="#">4</a></li>
-									<li><a href="#">5</a></li>
+									<li><a href="#">5</a></li>-->
 									<li><a href="#">&raquo;</a></li>
 								</ul>
 							</div>
@@ -442,4 +106,5 @@
 					<!-- End Pagination -->
 				</div>
 			</section>
+</div>
 			<!-- ================ Full Width Grid Style ======================= -->

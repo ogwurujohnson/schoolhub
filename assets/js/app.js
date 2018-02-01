@@ -1,6 +1,14 @@
 var app = angular.module('schoolApp',['schoolRouting','schoolHubDAO']);
 app.controller('schoolController', function ($scope, schoolhub) {
+    schoolhub.getAllSchoolCategories();
+    schoolhub.getAllSchools();
+});
+
+app.controller('addSchoolController', function($scope,schoolhub){
+    schoolhub.getAllSchoolCategories();
     this.createSchool = function () {
+        if($scope.schoolwebsite == null) $scope.schoolwebsite = "";
+        if($scope.schooldescription == null) $scope.schooldescription = "";
         this.newSchool = {
             "name": $scope.schoolname,
             "category":$scope.schoolcategory,
@@ -12,16 +20,17 @@ app.controller('schoolController', function ($scope, schoolhub) {
             "description":$scope.schooldescription,
             "country":$scope.schoolcountry,
             "image":'',
-            "facilities":$scope.facilities1,
             "openingtime":$scope.schoolopeningtime,
             "closingtime":$scope.schoolclosingtime
         };
+        console.log(this.newSchool);
         if(schoolhub.addNewSchool(this.newSchool)){
             alert("School Registered Successfully!");
         }
     };
 });
 
-app.controller('mainController', function($scope){
-
+app.controller('singleSchoolController', function($scope,$routeParams,schoolhub){
+    var id = $routeParams.id;
+    schoolhub.getParticularSchoolDetails(id);
 });

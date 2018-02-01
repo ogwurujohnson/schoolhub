@@ -2,24 +2,24 @@ var app = angular.module('schoolRouting', ['ngRoute']);
 app.config(function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: 'home.html',
-        controller:'mainController'
+        controller:'schoolController'
     }).when('/newSchool', {
         templateUrl: 'newSchool.html',
-        controller: 'mainController'
-    }).when('/schoolDetails', {
+        controller: 'addSchoolController'
+    }).when('/schoolDetails/:id', {
         templateUrl: 'schoolDetails.html',
-        controller: 'mainController'
+        controller: 'singleSchoolController'
     }).when('/schoolLeaderBoard', {
         templateUrl: 'schoolleaderboard.html',
-        controller: 'mainController'
+        controller: 'schoolController'
     }).when('/searchSchool',{
         templateUrl:'searchSchool.html',
-        controller:'mainController'
+        controller:'schoolController'
     }).when('/thankYou',{
         templateUrl:'thank-you.html',
         controller:'mainController'
     }).otherwise({
         templateUrl:'home.html',
-        controller:'mainController'
+        controller:'schoolController'
     });
 });

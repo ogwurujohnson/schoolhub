@@ -30,7 +30,7 @@ class visitor
     }
 
     public function allschools(){
-        $sql = "SELECT * FROM tblschool";
+        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status  FROM tblschools";
         $res = mysqli_query($this->con,$sql);
         $result = [];
         while($row = mysqli_fetch_row($res)){
@@ -41,13 +41,12 @@ class visitor
     }
 
     public function allschoolcategories(){
-        $sql = "SELECT * FROM tblcategory";
+        $sql = "SELECT id, Category_Name FROM tblcategory";
         $res = mysqli_query($this->con,$sql);
         $result = [];
         while($row = mysqli_fetch_row($res)){
             $result[] = $row;
         }
-        header('Content-Type:application/json');
         echo json_encode($result);
     }
 
@@ -64,8 +63,8 @@ class visitor
     }
 
     public function getparticularschooldetails($schoolid = ''){
-        $id = 2;
-        $sql = "SELECT tblschool.school_name,tblschool.school_description,tblschool.opening_hours,tblschool.address, tblschool.total_reviews, tblschool.average_reviews,tblschool.Date,tblreport.reports,tblreport.date FROM tblschool,tblreport WHERE tblschool.id = '$id' AND tblreport.school_id = '$id' ";
+        $id = $schoolid;
+        $sql = "SELECT tblschool.school_name,tblschool.school_description,tblschool.opening_hours,tblschool.address, tblschool.total_reviews, tblschool.average_reviews,tblschool.Date FROM tblschool WHERE tblschool.id = '$id'";
         $res = mysqli_query($this->con,$sql);
         $result = [];
         while($row = mysqli_fetch_row($res)){
@@ -115,20 +114,19 @@ class visitor
         $data = json_decode(file_get_contents("php://input"), true);
         $name = $data['name'];
         $category = $data['category'];
-        //$cacnumber = $data['cacnumber'];
-        //$website = $data['website'];
-        //$email = $data['email'];
+        $cacnumber = $data['cacnumber'];
+        $website = $data['website'];
+        $email = $data['email'];
         $address = $data['address'];
-        //$phonenumber = $data['phonenumber'];
+        $phonenumber = $data['phonenumber'];
         $description = $data['description'];
-        //$country = $data['country'];
+        $country = $data['country'];
         //$image = $data['image'];
-        //$facilities = $data['facilities'];
         $openingtime = $data['openingtime'];
         $closingtime = $data['closingtime'];
 
         if(!empty($name) && !empty($category) && !empty($address)){
-            $sql = "INSERT INTO tblschool (category_id, school_name, school_description, opening_hours, closing_hours, address) VALUES ('$category','$name','$description','$openingtime','$closingtime','$address')";
+            $sql = "INSERT INTO tblschools (Category_Id, School_Name, Description, Opening_Time, Closing_Time, Address, Email, Website, CAC, Country, Phone_Number) VALUES ('$category','$name','$description','$openingtime','$closingtime','$address','$email','$website','$cacnumber','$country','$phonenumber')";
             $res = mysqli_query($this->con, $sql) or die(mysqli_error($this->con));
             if($res){
                 $response['success']=true;

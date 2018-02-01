@@ -1,4 +1,5 @@
 <!-- ================ Start Page Title ======================= -->
+<div ng-controller="schoolController">
 			<section class="title-transparent page-title" style="background:url(assets/img/title-bg.jpg);">
 				<div class="container">
 					<div class="title-content">
@@ -17,81 +18,14 @@
 			<!-- ================ Place Listing Stayle ======================= -->
 			<section>
 				<div class="container">
-				
 					<div class="row">
-						<div class="col-md-8 col-sm-7">
-							<a href="#" class="place-box">
-								<span class="listing-count">9.5 Rating</span>
+						<div class="col-md-4 col-sm-4" ng-repeat="school in allschools">
+							<a href="{{'#!/schoolDetails/'+school[0]}}" class="place-box">
+								<span class="listing-count">0 Rating</span>
 								<div class="place-box-content">
-									<h4>University of Nigeria</h4>
+									<h4>{{school[1]}}</h4>
 								</div>
-								<div class="place-box-bg" style="background-image: url(assets/img/places/slider-2.jpg);"></div>
-							</a>
-						</div>
-						<div class="col-md-4 col-sm-5">
-							<a href="#" class="place-box">
-								<span class="listing-count">9.0 Rating</span>
-								<div class="place-box-content">
-									<h4>University Of Ibadan</h4>
-								</div>
-								<div class="place-box-bg" style="background-image: url(assets/img/places/place-2.jpg);"></div>
-							</a>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col-md-4 col-sm-5">
-							<a href="#" class="place-box">
-								<span class="listing-count">8.5 Rating</span>
-								<div class="place-box-content">
-									<h4>Queens College</h4>
-								</div>
-								<div class="place-box-bg" style="background-image: url(assets/img/places/place-3.jpg);"></div>
-							</a>
-						</div>
-						
-						<div class="col-md-8 col-sm-7">
-							<a href="#" class="place-box">
-								<span class="listing-count">8.0 Rating</span>
-								<div class="place-box-content">
-									<h4>University Of Lagos</h4>
-								</div>
-								<div class="place-box-bg" style="background-image: url(assets/img/places/place-4.jpg);"></div>
-							</a>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col-md-4 col-sm-4">
-							<a href="#" class="place-box">
-								<span class="listing-count">7.9 Rating</span>
-								<div class="place-box-content">
-									<h4>University Of Uyo</h4>
-									
-								</div>
-								<div class="place-box-bg" style="background-image: url(assets/img/places/place-5.jpg);"></div>
-							</a>
-						</div>
-						
-						<div class="col-md-4 col-sm-4">
-							<a href="#" class="place-box">
-								<span class="listing-count">7.5 Rating</span>
-								<div class="place-box-content">
-									<h4>University Of Portharcourt </h4>
-									
-								</div>
-								<div class="place-box-bg" style="background-image: url(assets/img/places/place-6.jpg);"></div>
-							</a>
-						</div>
-						
-						<div class="col-md-4 col-sm-4">
-							<a href="#" class="place-box">
-								<span class="listing-count">7.0 Rating</span>
-								<div class="place-box-content">
-									<h4>Federal University of Technology Akure</h4>
-									
-								</div>
-								<div class="place-box-bg" style="background-image: url(assets/img/places/place-7.jpg);"></div>
+								<div class="place-box-bg" style="background-image: url({{school[5]}});"></div>
 							</a>
 						</div>
 						
@@ -99,3 +33,4 @@
 				</div>
 			</section>
 			<!-- ================ End Place Listing Stayle ======================= -->
+</div>
