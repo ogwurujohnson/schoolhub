@@ -30,7 +30,7 @@ class visitor
     }
 
     public function allschools(){
-        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status  FROM tblschools";
+        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status, Total_Rating, Rate_Count, Description, Opening_Time, Closing_Time  FROM tblschools";
         $res = mysqli_query($this->con,$sql);
         $result = [];
         while($row = mysqli_fetch_row($res)){
@@ -64,7 +64,7 @@ class visitor
 
     public function getparticularschooldetails($schoolid = ''){
         $id = $schoolid;
-        $sql = "SELECT tblschool.school_name,tblschool.school_description,tblschool.opening_hours,tblschool.address, tblschool.total_reviews, tblschool.average_reviews,tblschool.Date FROM tblschool WHERE tblschool.id = '$id'";
+        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status, Total_Rating, Rate_Count, Description, Opening_Time, Closing_Time FROM tblschools WHERE tblschools.id = '$id'";
         $res = mysqli_query($this->con,$sql);
         $result = [];
         while($row = mysqli_fetch_row($res)){

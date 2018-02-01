@@ -1,16 +1,16 @@
 <div ng-controller="singleSchoolController">
 <!-- ================ School Listing Detail Basic Information ======================= -->
-			<section class="detail-section" style="background:url(assets/img/slider-2.jpg);">
+			<section class="detail-section" style="background:url({{singleSchool[0][5]}});">
 				<div class="overlay" style="background-color: rgb(36, 36, 41); opacity: 0.5;"></div>
 				<div class="profile-cover-content">
 					<div class="container">
 						<div class="cover-buttons">
 							<ul>
 							<!-- =====School Basic Details ====== -->	
-							<li><div class="buttons medium button-plain "><i class="fa fa-phone"></i>+234 803 352 5155</div></li>
-							<li><div class="buttons medium button-plain "><i class="fa fa-map-marker"></i>Nigeria</div></li>
-							<li><div class="inside-rating buttons listing-rating theme-btn button-plain"><span class="value">8</span> <sup class="out-of">/10</sup></div></li>
-							<li><a href="#add-review" class="buttons btn-outlined medium add-review"><i class="fa fa-comments-o"></i><span class="hidden-xs">Add review</span></a></li>
+							<li><div class="buttons medium button-plain "><i class="fa fa-phone"></i>{{singleSchool[0][6]}}</div></li>
+							<li><div class="buttons medium button-plain "><i class="fa fa-map-marker"></i>{{singleSchool[0][3]+", "+singleSchool[0][4]}}</div></li>
+							<li><div class="inside-rating buttons listing-rating theme-btn button-plain"><span class="value">{{singleSchool[0][9]+" reviews"}}</span></div></li>
+							<li><a class="buttons btn-outlined medium add-review"><i class="fa fa-comments-o"></i><span class="hidden-xs">Add review</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -27,11 +27,11 @@
 							<div class="detail-wrapper">
 								<div class="detail-wrapper-body">
 									<div class="listing-title-bar">
-										<h3>University Of Nigeria <span class="mrg-l-5 category-tag">Nsukka,Nigeria</span></h3>
+										<h3>{{singleSchool[0][1]}} <span class="mrg-l-5 category-tag">{{singleSchool[0][3]+", "+singleSchool[0][4]}}</span></h3>
 										<div>
 											<a href="#listing-location" class="listing-address">
 												<i class="ti-location-pin mrg-r-5"></i>
-												Nsukka, Nigeria
+                                                {{singleSchool[0][3]+", "+singleSchool[0][4]}}
 											</a>
 											
 											<div class="rating-box">
@@ -42,7 +42,7 @@
 													<i class="fa fa-star"></i>
 													<i class="fa fa-star"></i>
 												</div>
-												<a href="#" class="detail-rating-count">8.0 Average Rating</a>
+												<a href="#" class="detail-rating-count">{{singleSchool[0][9]}} Average Rating</a>
 											</div>
 										</div>
 									</div>
@@ -51,41 +51,16 @@
 							
 							<div class="detail-wrapper">
 								<div class="detail-wrapper-header">
-									<h4>Overview</h4>
+									<h4>Description</h4>
 								</div>
 								<div class="detail-wrapper-body">
-									<p>The University of Nigeria, commonly referred to as UNN, is a federal university located in Nsukka, Enugu State, Nigeria. Founded by Nnamdi Azikiwe in 1955 and formally opened on 7 October 1960, the University of Nigeria has three campuses – Nsukka, Enugu, and Ituku-Ozalla – all located in Enugu State.</p>
-
-									<p>The University of Nigeria was the first full-fledged indigenous and first autonomous university in Nigeria, modelled upon the American educational system. It is the first land-grant university in Africa and one of the five elite universities in the country. The university has 15 Faculties and 102 academic departments.</p> 
-									<p>The University offers 82 undergraduate programs and 211 postgraduate programmes. The university celebrated its 50th anniversary on October 2010.</p>		
+									<p>{{singleSchool[0][10]}}</p>
 								</div>
 							</div>
 							
 							<div class="detail-wrapper">
 								<div class="detail-wrapper-header">
-									<h4>Amenities</h4>
-								</div>
-								<div class="detail-wrapper-body">
-									<ul class="detail-check">
-										<li>Alarm system</li>
-										<li>Depanneur in building</li>
-										<li>Onsite management</li>
-										<li>Janitor</li>
-										<li>Security cameras</li>
-										<li>Laundry room in building</li>
-										<li>Door attendant</li>
-										<li>Street parking</li>
-										<li>Attached garage</li>
-										<li>Elevator</li>
-										<li>Wheelchair accessible</li>
-										<li>Hot water</li>
-									</ul>
-								</div>
-							</div>
-							
-							<div class="detail-wrapper">
-								<div class="detail-wrapper-header">
-									<h4>48 Reviews</h4>
+									<h4>{{singleSchool[0][8]}} Reviews</h4>
 								</div>
 								<div class="detail-wrapper-body">
 									<ul class="review-list">
@@ -99,7 +74,7 @@
 														<div class="review-info">
 															<div class="review-comment">
 																<div class="review-author">
-																	Cole Harris																			
+																	Anonymous
 																</div>
 																<div class="review-comment-stars">
 																	<i class="fa fa-star"></i>
@@ -120,70 +95,6 @@
 												</div>
 											</div>
 										</li>
-										
-										<li>
-											<div class="reviews-box">
-												<div class="review-body">
-													<div class="review-avatar">
-														<img alt="" src="assets/img/user-2.jpg" class="avatar avatar-140 photo">
-													</div>
-													<div class="review-content">
-														<div class="review-info">
-															<div class="review-comment">
-																<div class="review-author">
-																	Mariya Merry																			
-																</div>
-																<div class="review-comment-stars">
-																	<i class="fa fa-star"></i>
-																	<i class="fa fa-star"></i>
-																	<i class="fa fa-star"></i>
-																	<i class="fa fa-star"></i>
-																	<i class="fa fa-star empty"></i>
-																</div>
-															</div>
-															<div class="review-comment-date">
-																<div class="review-date">
-																	<span>3 weeks ago</span>
-																</div>
-															</div>
-														</div>
-														<p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium Voluptatum Deleniti Atque Corrupti Quos Dolores Et Quas Molestias Excepturi Sint Occaecati Cupiditate Non Provident.</p>
-													</div>
-												</div>
-											</div>
-										</li>
-										
-										<li>
-											<div class="reviews-box">
-												<div class="review-body">
-													<div class="review-avatar">
-														<img alt="" src="assets/img/user-3.jpg" class="avatar avatar-140 photo">
-													</div>
-													<div class="review-content">
-														<div class="review-info">
-															<div class="review-comment">
-																<div class="review-author">
-																	Wadden Will																	
-																</div>
-																<div class="review-comment-stars">
-																	<i class="fa fa-star"></i>
-																	<i class="fa fa-star"></i>
-																	<i class="fa fa-star"></i>
-																	<i class="fa fa-star"></i>
-																	<i class="fa fa-star empty"></i>
-																</div>
-															</div>
-															<div class="review-comment-date">
-																<div class="review-date">
-																	<span>5 weeks ago</span>
-																</div>
-															</div>
-														</div>
-														<p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium Voluptatum Deleniti Atque Corrupti Quos Dolores Et Quas Molestias Excepturi Sint Occaecati Cupiditate Non Provident.</p>
-													</div>
-												</div>
-											</div>
-										</li>
 									</ul>
 								</div>
 							</div>
@@ -193,7 +104,12 @@
 									<h4>Rate & Write Reviews</h4>
 								</div>
 								<div class="detail-wrapper-body">
-								
+                                    <select data-placeholder="Choose Review Topic" class="form-control chosen-select" tabindex="2" required ng-model="schoolreviewtype">
+                                        <option value="">Select Review Topic</option>
+                                        <option ng-repeat="category in schoolCategories" value="{{category[0]}}">
+                                            {{category[1]}}
+                                        </option>
+                                    </select>
 									<div class="row mrg-bot-10">
 										<div class="col-md-12">
 											<div class="rating-opt">
@@ -230,13 +146,11 @@
 									<div class="widget-boxed-body">
 										<div class="side-list">
 											<ul>
-												<li>Monday <span>9 AM - 5 PM</span></li>
-												<li>Tuesday <span>9 AM - 5 PM</span></li>
-												<li>Wednesday <span>9 AM - 5 PM</span></li>
-												<li>Thursday <span>9 AM - 5 PM</span></li>
-												<li>Friday <span>9 AM - 5 PM</span></li>
-												<li>Saturday <span>9 AM - 3 PM</span></li>
-												<li>Sunday <span>Closed</span></li>
+												<li>Monday <span>{{singleSchool[0][11]}} - {{singleSchool[0][12]}}</span></li>
+												<li>Tuesday <span>{{singleSchool[0][11]}} - {{singleSchool[0][12]}}</span></li>
+												<li>Wednesday <span>{{singleSchool[0][11]}} - {{singleSchool[0][12]}}</span></li>
+												<li>Thursday <span>{{singleSchool[0][11]}} - {{singleSchool[0][12]}}</span></li>
+												<li>Friday <span>{{singleSchool[0][11]}} - {{singleSchool[0][12]}}</span></li>
 											</ul>
 										</div>
 									</div>
@@ -245,16 +159,16 @@
 								<!-- Start: Listing Category -->
 								<div class="widget-boxed">
 									<div class="widget-boxed-header">
-										<h4><i class="ti-briefcase padd-r-10"></i>Top Categories</h4>
+										<h4><i class="ti-briefcase padd-r-10"></i>Topics</h4>
 									</div>
 									<div class="widget-boxed-body padd-top-10 padd-bot-0">
 										<div class="side-list">
 											<ul class="category-list">
-												<li><a href="#">Primary School <span class="badge bg-g">4</span></a></li>
-												<li><a href="#">Secondary School <span class="badge bg-a">7</span></a></li>
-												<li><a href="#">universities <span class="badge bg-d">10</span></a></li>
-												<li><a href="#">Polytechnics <span class="badge bg-l">55</span></a></li>
-												<li><a href="#">College Of Education <span class="badge bg-o">8</span></a></li>
+												<li><a>Facility<span class="badge bg-g">0</span></a></li>
+												<li><a>Academic Perfomance<span class="badge bg-a">0</span></a></li>
+												<li><a>Quality of Teachers<span class="badge bg-d">0</span></a></li>
+												<li><a>Learning Environment<span class="badge bg-l">0</span></a></li>
+                                                <li><a>General<span class="badge bg-l">0</span></a></li>
 											</ul>
 										</div>
 									</div>
@@ -269,17 +183,9 @@
 									<div class="widget-boxed-body">
 										<div class="side-list no-border">
 											<ul>
-												<li><i class="ti-location-pin padd-r-10"></i>Nsukka, Nigeria</li>
-												<li><i class="ti-mobile padd-r-10"></i>080333525155</li>
-												<li><i class="ti-email padd-r-10"></i>info@unn.edu.ng</li>
-											</ul>
-											<h5>Share Listing</h5>
-											<ul class="side-list-inline no-border social-side">
-												<li><a href="#"><i class="fa fa-facebook theme-cl"></i></a></li>
-												<li><a href="#"><i class="fa fa-google-plus theme-cl"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter theme-cl"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin theme-cl"></i></a></li>
-												<li><a href="#"><i class="fa fa-pinterest theme-cl"></i></a></li>
+												<li><i class="ti-location-pin padd-r-10"></i>{{singleSchool[0][3]+", "+singleSchool[0][4]}}</li>
+												<li><i class="ti-mobile padd-r-10"></i>{{singleSchool[0][6]}}</li>
+												<li><i class="ti-email padd-r-10"></i>{{singleSchool[0][2]}}</li>
 											</ul>
 										</div>
 									</div>
