@@ -6,7 +6,8 @@ app.controller('schoolController', function ($scope, schoolhub) {
 
 app.controller('addSchoolController', function($scope,schoolhub){
     schoolhub.getAllSchoolCategories();
-    this.createSchool = function () {
+    var controller = this;
+    controller.createSchool = function () {
         if($scope.schoolwebsite == null) $scope.schoolwebsite = "";
         if($scope.schooldescription == null) $scope.schooldescription = "";
         this.newSchool = {
@@ -23,14 +24,40 @@ app.controller('addSchoolController', function($scope,schoolhub){
             "openingtime":$scope.schoolopeningtime,
             "closingtime":$scope.schoolclosingtime
         };
-        console.log(this.newSchool);
-        if(schoolhub.addNewSchool(this.newSchool)){
+        schoolhub.addNewSchool(this.newSchool);
             alert("School Registered Successfully!");
-        }
     };
 });
 
 app.controller('singleSchoolController', function($scope,$routeParams,schoolhub){
     var id = $routeParams.id;
     schoolhub.getParticularSchoolDetails(id);
+});
+
+app.controller('reviewController', function($scope, schoolhub, $routeParams, $rootScope){
+    schoolhub.getAllReviewTypes();
+    var controller = this;
+    var schoolId = $routeParams.id;
+
+    controller.addReview = function(){
+        if($scope.reviewstars == null) $scope.reviewstars = 0;
+        this.newReview = {
+            "reviewtype":$scope.schoolreviewtype,
+            "reviewdescription":$scope.schoolreviewdescription,
+            "stars":$scope.reviewstars
+        };
+        console.log(this.newReview);
+        schoolhub.addReview(this.newReview, schoolId);
+        controller.updateReview();
+    };
+
+    controller.updateReview = function() {
+        this.reviewData = {
+            "totalrating": parseInt($rootScope.singleSchool[0][8]) + parseInt($scope.reviewstars),
+            "ratecount": parseInt($rootScope.singleSchool[0][9]) + 1
+        };
+        console.log(this.reviewData);
+        schoolhub.updateParticularSchoolReview(this.reviewData, schoolId);
+        alert("Thanks for your review!");
+    };
 });

@@ -99,38 +99,66 @@
 								</div>
 							</div>
 							
-							<div id="add-review" class="detail-wrapper">
+							<div id="add-review" class="detail-wrapper" ng-controller="reviewController as reviewCtrl">
 								<div class="detail-wrapper-header">
 									<h4>Rate & Write Reviews</h4>
 								</div>
+								<form ng-submit="reviewCtrl.addReview()">
 								<div class="detail-wrapper-body">
                                     <select data-placeholder="Choose Review Topic" class="form-control chosen-select" tabindex="2" required ng-model="schoolreviewtype">
                                         <option value="">Select Review Topic</option>
-                                        <option ng-repeat="category in schoolCategories" value="{{category[0]}}">
-                                            {{category[1]}}
+                                        <option ng-repeat="type in reviewTypes" value="{{type[0]}}">
+                                            {{type[1]}}
                                         </option>
                                     </select>
+									<div class="row">
+										<div class="col-sm-12">
+											<textarea class="form-control height-110" placeholder="Tell us your experience..." required ng-model="schoolreviewdescription"></textarea>
+										</div>
+									</div>
 									<div class="row mrg-bot-10">
 										<div class="col-md-12">
-											<div class="rating-opt">
-												<div   class="jr-ratenode jr-nomal"></div>
-												<div   class="jr-ratenode jr-nomal "></div>
-												<div   class="jr-ratenode jr-nomal "></div>
-												<div   class="jr-ratenode jr-nomal "></div>
-												<div   class="jr-ratenode jr-nomal "></div>
+											<div class="rating">
+												<label>
+													<input type="radio" name="stars" value="1" ng-model="reviewstars"/>
+													<span class="icon">★</span>
+												</label>
+												<label>
+													<input type="radio" name="stars" value="2" ng-model="reviewstars"/>
+													<span class="icon">★</span>
+													<span class="icon">★</span>
+												</label>
+												<label>
+													<input type="radio" name="stars" value="3" ng-model="reviewstars"/>
+													<span class="icon">★</span>
+													<span class="icon">★</span>
+													<span class="icon">★</span>
+												</label>
+												<label>
+													<input type="radio" name="stars" value="4" ng-model="reviewstars"/>
+													<span class="icon">★</span>
+													<span class="icon">★</span>
+													<span class="icon">★</span>
+													<span class="icon">★</span>
+												</label>
+												<label>
+													<input type="radio" name="stars" value="5" ng-model="reviewstars"/>
+													<span class="icon">★</span>
+													<span class="icon">★</span>
+													<span class="icon">★</span>
+													<span class="icon">★</span>
+													<span class="icon">★</span>
+												</label>
 											</div>
 										</div>
 									</div>
-									
 									<div class="row">
 										<div class="col-sm-12">
-											<textarea class="form-control height-110" placeholder="Tell us your experience..."></textarea>
-										</div>
-										<div class="col-sm-12">
-											<button type="button" class="btn theme-btn">Submit your review</button>
+											<button type="submit" class="btn theme-btn">Submit your review</button>
 										</div>
 									</div>
 								</div>
+							</form>
 							</div>
 						</div>
 						<!-- End: Listing Detail Wrapper -->

@@ -5,7 +5,6 @@ app.factory('schoolhub', function ($http, $rootScope) {
     schoolhubObject.getAllSchools = function () {
         $http.get('api/visitor/allschools').then(function (data) {
             $rootScope.allschools = data.data;
-            console.log($rootScope.allschools);
             return data;
         }, function (error) {
             console.log(error);
@@ -27,7 +26,6 @@ app.factory('schoolhub', function ($http, $rootScope) {
     schoolhubObject.getParticularSchoolDetails = function (id) {
         $http.get('api/visitor/getparticularschooldetails/'+id).then(function (data) {
             $rootScope.singleSchool = data.data;
-            console.log($rootScope.singleSchool);
             return data;
         }, function (error) {
             console.log(error);
@@ -37,12 +35,34 @@ app.factory('schoolhub', function ($http, $rootScope) {
     schoolhubObject.getAllReport = function () {
         return {};
     };
-    schoolhubObject.addReview = function (formData) {
-        return {};
+    schoolhubObject.getAllReviewTypes = function () {
+        $http.get('api/visitor/allreviewtypes').then(function (data) {
+            $rootScope.reviewTypes = data.data;
+            return data;
+        }, function (error) {
+            console.log(error);
+            return false;
+        });
+    };
+    schoolhubObject.addReview = function (formData, schoolId) {
+        $http.post('api/visitor/addReview/'+schoolId, formData).then(function (data) {
+            return true;
+        }, function (error) {
+            console.log(error);
+            return false;
+        });
     };
     schoolhubObject.addNewSchool = function (formData) {
         $http.post('api/visitor/addNewSchool', formData).then(function (data) {
-            return data;
+            return true;
+        }, function (error) {
+            console.log(error);
+            return false;
+        });
+    };
+    schoolhubObject.updateParticularSchoolReview = function (formData, schoolid) {
+        $http.post('api/visitor/updateParticularSchoolReview/'+schoolid, formData).then(function (data) {
+            return true;
         }, function (error) {
             console.log(error);
             return false;

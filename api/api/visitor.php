@@ -50,6 +50,16 @@ class visitor
         echo json_encode($result);
     }
 
+    public function allreviewtypes(){
+        $sql = "SELECT id, Review_Name FROM tblreviewtype";
+        $res = mysqli_query($this->con,$sql);
+        $result = [];
+        while($row = mysqli_fetch_row($res)){
+            $result[] = $row;
+        }
+        echo json_encode($result);
+    }
+
     public function schoolreport($schoolid = ''){
         $id = $schoolid;
         $sql = "SELECT reports FROM tblreport WHERE school_id = '$id' ";
@@ -86,26 +96,25 @@ class visitor
     }
 
     public function addreview($schoolid = ''){
-        $data = array();
-        $id = $schoolid;
-        if (isset($_POST['txtreport'])) {
-            $starreview = $report = $schoolid = "";
-            $starreview = mysqli_real_escape_string($this->con, $_POST['txtreviewstar']);
-            $report = mysqli_real_escape_string($this->con, $_POST['txtreport']);
-            if(!empty($starreview) && !empty($report)){
-                $sql = "INSERT INTO tblreport (school_id, reviews, reports) VALUES ('$id','$starreview','$report')";
+        $response = [];
+        $data = json_decode(file_get_contents("php://input"), true);
+        $type = $data['reviewtype'];
+        $description = $data['reviewdescription'];
+        $stars = $data['stars'];
+
+            if(!empty($type) && !empty($description) && !empty($stars)){
+                $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid','$description','$stars','$type')";
                 $res = mysqli_query($this->con, $sql) or die(mysqli_error($this->con));
                 if($res){
-                    $data['success'] = true;
+                    $response['success'] = true;
                 }
                 else{
-                    $data['success'] = false;
+                    $response['success'] = false;
                 }
             }else{
-                $data['error'] = "empty";
+                $response['error'] = "empty";
             }
-        }
-        echo json_encode($data);
+        echo json_encode($response);
 
     }
 
@@ -131,6 +140,27 @@ class visitor
             if($res){
                 $response['success']=true;
             }
+        }
+        echo json_encode($response);
+    }
+
+    public function updateParticularSchoolReview($schoolid = ''){
+        $response = [];
+        $data = json_decode(file_get_contents("php://input"), true);
+        $totalrating = $data['totalrating'];
+        $ratecount = $data['ratecount'];
+
+        if(!empty($totalrating) && !empty($ratecount)){
+            $sql = "UPDATE tblschools SET Total_Rating = '$totalrating', Rate_Count = '$ratecount' WHERE id = '".$schoolid."'";
+            $res = mysqli_query($this->con, $sql) or die(mysqli_error($this->con));
+            if($res){
+                $response['success'] = true;
+            }
+            else{
+                $response['success'] = false;
+            }
+        }else{
+            $response['error'] = "empty";
         }
         echo json_encode($response);
     }
