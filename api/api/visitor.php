@@ -84,6 +84,18 @@ class visitor
         echo json_encode($result);
     }
 
+    public function getschoolreview($schoolid = ''){
+        $id = $schoolid;
+        $sql = "SELECT id, School_Id, Comment, Rating, Review_Type, Date FROM tblreviews WHERE tblreviews.School_Id = '$id'";
+        $res = mysqli_query($this->con,$sql);
+        $result = [];
+        while($row = mysqli_fetch_row($res)){
+            $result[] = $row;
+        }
+        header('Content-Type:application/json');
+        echo json_encode($result);
+    }
+
     public function allreports(){
         $sql = "SELECT * FROM tblreport";
         $res = mysqli_query($this->con,$sql);

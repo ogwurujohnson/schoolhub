@@ -29,11 +29,17 @@ app.controller('addSchoolController', function($scope,schoolhub){
     };
 });
 
-app.controller('singleSchoolController', function($scope,$routeParams,schoolhub){
+app.controller('singleSchoolController', function($scope,$routeParams,schoolhub,$rootScope){
     var id = $routeParams.id;
     schoolhub.getParticularSchoolDetails(id);
-});
-
+    schoolhub.getSchoolReview(id);
+    /*var schoolreviewvar = $rootScope.schoolreview;
+    console.log(schoolreviewvar);
+    for(var i = 0;  i < schoolreviewvar.length; i++){
+        var num = parseInt($rootScope.schoolreviewvar[i][3]);
+        console.log(num);*/
+    }
+})
 app.controller('reviewController', function($scope, schoolhub, $routeParams, $rootScope){
     schoolhub.getAllReviewTypes();
     var controller = this;

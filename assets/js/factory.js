@@ -20,9 +20,7 @@ app.factory('schoolhub', function ($http, $rootScope) {
             return false;
         });
     };
-    schoolhubObject.getSchoolReport = function(id){
-        return {};
-    };
+
     schoolhubObject.getParticularSchoolDetails = function (id) {
         $http.get('api/visitor/getparticularschooldetails/'+id).then(function (data) {
             $rootScope.singleSchool = data.data;
@@ -32,9 +30,18 @@ app.factory('schoolhub', function ($http, $rootScope) {
             return false;
         });
     };
-    schoolhubObject.getAllReport = function () {
-        return {};
+
+    schoolhubObject.getSchoolReview = function (id){
+        $http.get('api/visitor/getschoolreview/'+id).then(function (data) {
+            $rootScope.schoolreview = data.data;
+            console.log($rootScope.schoolreview);
+            return data;
+        }, function (error) {
+            console.log(error);
+            return false;
+        });
     };
+
     schoolhubObject.getAllReviewTypes = function () {
         $http.get('api/visitor/allreviewtypes').then(function (data) {
             $rootScope.reviewTypes = data.data;

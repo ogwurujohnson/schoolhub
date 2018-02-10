@@ -64,11 +64,11 @@
 								</div>
 								<div class="detail-wrapper-body">
 									<ul class="review-list">
-										<li>
+										<li ng-repeat="reviews in schoolreview track by $index">
 											<div class="reviews-box">
 												<div class="review-body">
 													<div class="review-avatar">
-														<img alt="" src="assets/img/user-1.png" class="avatar avatar-140 photo">
+														<img alt="" src="assets/img/passport.png" class="avatar avatar-140 photo">
 													</div>
 													<div class="review-content">
 														<div class="review-info">
@@ -77,20 +77,16 @@
 																	Anonymous
 																</div>
 																<div class="review-comment-stars">
-																	<i class="fa fa-star"></i>
-																	<i class="fa fa-star"></i>
-																	<i class="fa fa-star"></i>
-																	<i class="fa fa-star"></i>
-																	<i class="fa fa-star empty"></i>
+																	<i class="fa fa-star" ng-repeat="n in [1,2,3,4,5]"></i>
 																</div>
 															</div>
 															<div class="review-comment-date">
 																<div class="review-date">
-																	<span>4 weeks ago</span>
+																	<span>{{reviews[5]}}</span>
 																</div>
 															</div>
 														</div>
-														<p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium Voluptatum Deleniti Atque Corrupti Quos Dolores Et Quas Molestias Excepturi Sint Occaecati Cupiditate Non Provident.</p>
+														<p>{{reviews[2]}}</p>
 													</div>
 												</div>
 											</div>
