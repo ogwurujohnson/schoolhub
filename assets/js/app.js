@@ -4,12 +4,55 @@ app.controller('schoolController', function ($scope, schoolhub) {
     schoolhub.getAllSchools();
 });
 
-app.controller('addSchoolController', function($scope,schoolhub){
+app.controller('addSchoolController', function($scope,schoolhub,$http){
     schoolhub.getAllSchoolCategories();
     var controller = this;
+    controller.form = [];
+    controller.files = [];
+    $scope.imagepath = '';
+
+    $scope.uploadedImage = function(element) {
+        controller.currentFile = element.files[0];
+        controller.files = element.files;
+
+        var reader = new FileReader();
+        reader.onload = function(event) {
+            $scope.image_source = event.target.result;
+            $scope.$apply(function($scope) {
+                controller.files = element.files;
+            });
+        };
+        reader.readAsDataURL(element.files[0]);
+
+        controller.form.image = controller.files[0];
+        $http({
+            method  : 'POST',
+            url     : 'api/visitor/uploadSchoolImage',
+            processData: false,
+            transformRequest: function (data) {
+                var formData = new FormData();
+                formData.append("image", controller.form.image);
+                return formData;
+            },
+            data : controller.form,
+            headers: {
+                'Content-Type': undefined
+            }
+        }).then(function(data){
+            if(data.data.success === false){
+                console.log('An Error Occured!');
+            }else{
+                $scope.imagepath = 'assets/img/'+data.data.success;
+                console.log($scope.imagepath);
+            }
+        });
+    };
+
     controller.createSchool = function () {
         if($scope.schoolwebsite == null) $scope.schoolwebsite = "";
         if($scope.schooldescription == null) $scope.schooldescription = "";
+        if($scope.schoolphonenumber == null) $scope.schoolphonenumber = "";
+
         this.newSchool = {
             "name": $scope.schoolname,
             "category":$scope.schoolcategory,
@@ -20,7 +63,7 @@ app.controller('addSchoolController', function($scope,schoolhub){
             "phonenumber": $scope.schoolphonenumber,
             "description":$scope.schooldescription,
             "country":$scope.schoolcountry,
-            "image":'',
+            "image":$scope.imagepath,
             "openingtime":$scope.schoolopeningtime,
             "closingtime":$scope.schoolclosingtime
         };
@@ -33,14 +76,15 @@ app.controller('singleSchoolController', function($scope,$routeParams,schoolhub,
     var id = $routeParams.id;
     schoolhub.getParticularSchoolDetails(id);
     schoolhub.getSchoolReview(id);
-    /*var schoolreviewvar = $rootScope.schoolreview;
-    console.log(schoolreviewvar);
-    for(var i = 0;  i < schoolreviewvar.length; i++){
-        var num = parseInt($rootScope.schoolreviewvar[i][3]);
-        console.log(num);*/
-    }
-})
-app.controller('reviewController', function($scope, schoolhub, $routeParams, $rootScope){
+    $scope.getNumber = function(num) {
+        var numarray = [];
+        for(var i = 0; i < num; i++){
+            numarray.push(i);
+        }
+        return numarray;
+    };
+});
+app.controller('reviewController', function($scope, schoolhub, $routeParams, $rootScope, $window){
     schoolhub.getAllReviewTypes();
     var controller = this;
     var schoolId = $routeParams.id;
@@ -64,6 +108,6 @@ app.controller('reviewController', function($scope, schoolhub, $routeParams, $ro
         };
         console.log(this.reviewData);
         schoolhub.updateParticularSchoolReview(this.reviewData, schoolId);
-        alert("Thanks for your review!");
+        $window.location.href = 'index.html#!/thankYou';
     };
 });

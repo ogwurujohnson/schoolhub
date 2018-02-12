@@ -19,9 +19,9 @@
 			<section>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 col-sm-4" ng-repeat="school in allschools">
+						<div class="col-md-4 col-sm-4" ng-repeat="school in allschools | orderBy:'school[9]':false">
 							<a href="{{'#!/schoolDetails/'+school[0]}}" class="place-box">
-								<span class="listing-count">0 Rating</span>
+								<span class="listing-count">{{school[9]}} Rating</span>
 								<div class="place-box-content">
 									<h4>{{school[1]}}</h4>
 								</div>

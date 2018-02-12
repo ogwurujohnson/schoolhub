@@ -5,6 +5,13 @@ app.factory('schoolhub', function ($http, $rootScope) {
     schoolhubObject.getAllSchools = function () {
         $http.get('api/visitor/allschools').then(function (data) {
             $rootScope.allschools = data.data;
+            var parseId = function(school){
+                for(var i = 0; i < school.length; i++){
+                    school[i][9] = parseInt(school[i][9]);
+                }
+                return school;
+            };
+            $rootScope.allschools = parseId($rootScope.allschools);
             return data;
         }, function (error) {
             console.log(error);
@@ -34,6 +41,13 @@ app.factory('schoolhub', function ($http, $rootScope) {
     schoolhubObject.getSchoolReview = function (id){
         $http.get('api/visitor/getschoolreview/'+id).then(function (data) {
             $rootScope.schoolreview = data.data;
+            var parseId = function(school){
+                for(var i = 0; i < school.length; i++){
+                    school[i][3] = parseInt(school[i][3]);
+                }
+                return school;
+            };
+            $rootScope.schoolreview = parseId($rootScope.schoolreview);
             console.log($rootScope.schoolreview);
             return data;
         }, function (error) {

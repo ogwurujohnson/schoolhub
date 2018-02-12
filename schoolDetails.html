@@ -60,11 +60,11 @@
 							
 							<div class="detail-wrapper">
 								<div class="detail-wrapper-header">
-									<h4>{{singleSchool[0][8]}} Reviews</h4>
+									<h4>{{singleSchool[0][9]}} Reviews</h4>
 								</div>
 								<div class="detail-wrapper-body">
 									<ul class="review-list">
-										<li ng-repeat="reviews in schoolreview track by $index">
+										<li ng-repeat="reviews in schoolreview | orderBy:'$index':true">
 											<div class="reviews-box">
 												<div class="review-body">
 													<div class="review-avatar">
@@ -77,7 +77,7 @@
 																	Anonymous
 																</div>
 																<div class="review-comment-stars">
-																	<i class="fa fa-star" ng-repeat="n in [1,2,3,4,5]"></i>
+																	<i class="fa fa-star" ng-repeat="i in getNumber(reviews[3])"></i>
 																</div>
 															</div>
 															<div class="review-comment-date">
@@ -188,7 +188,7 @@
 									<div class="widget-boxed-body padd-top-10 padd-bot-0">
 										<div class="side-list">
 											<ul class="category-list">
-												<li><a>Facility<span class="badge bg-g">0</span></a></li>
+												<li><a>Facilities<span class="badge bg-g">0</span></a></li>
 												<li><a>Academic Perfomance<span class="badge bg-a">0</span></a></li>
 												<li><a>Quality of Teachers<span class="badge bg-d">0</span></a></li>
 												<li><a>Learning Environment<span class="badge bg-l">0</span></a></li>

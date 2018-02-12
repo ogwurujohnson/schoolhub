@@ -20,7 +20,7 @@
 				<div class="container">
 					<div class="col-md-10 col-sm-12 col-md-offset-1 mob-padd-0">
 						<!-- General Information -->
-                        <form method="post" ng-submit="schoolctrl.createSchool()">
+                        <form method="post" ng-submit="schoolctrl.createSchool()" enctype="multipart/form-data">
 						<div class="add-listing-box general-info mrg-bot-25 padd-bot-30 padd-top-25">
 							<div class="listing-box-header">
 								<i class="ti-files theme-cl"></i>
@@ -91,12 +91,12 @@
 							</div>
 								<div class="row mrg-r-10 mrg-l-10">
 									<div class="col-sm-6">
-										<label>Email*</label>
-										<input type="text" class="form-control" required ng-model="schoolemail">
+										<label>Email</label>
+										<input type="email" class="form-control" ng-model="schoolemail">
 									</div>
 									<div class="col-sm-6">
-										<label>Phone*</label>
-										<input type="text" class="form-control" required ng-model="schoolphonenumber">
+										<label>Phone</label>
+										<input type="number" class="form-control" ng-model="schoolphonenumber">
 									</div>
 									<div class="col-sm-12">
 										<label>Description</label>
@@ -115,8 +115,7 @@
 							<div class="dropzone dz-clickable primary-dropzone">
 								<div class="dz-default dz-message">
 									<i class="ti-gallery"></i>
-                                    <input ng-model="schoolimage" type="file" class="form-control" accept="image/*" ng-change="uploadFile(this)">
-                                    <img ng-src="{{image_source}}" class="img-responsive" />
+                                    <input type="file" class="form-control" accept="image/*" onchange="angular.element(this).scope().uploadedImage(this)">
 								</div>
 							</div>
 						</div>
