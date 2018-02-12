@@ -152,12 +152,12 @@ class visitor
         $phonenumber = $data['phonenumber'];
         $description = $data['description'];
         $country = $data['country'];
-        //$image = $data['image'];
+        $image = $data['image'];
         $openingtime = $data['openingtime'];
         $closingtime = $data['closingtime'];
 
         if (!empty($name) && !empty($category) && !empty($address)) {
-            $sql = "INSERT INTO tblschools (Category_Id, School_Name, Description, Opening_Time, Closing_Time, Address, Email, Website, CAC, Country, Phone_Number) VALUES ('$category','$name','$description','$openingtime','$closingtime','$address','$email','$website','$cacnumber','$country','$phonenumber')";
+            $sql = "INSERT INTO tblschools (Category_Id, School_Name, Description, Opening_Time, Closing_Time, Address, Email, Website, CAC, Country, Image, Phone_Number) VALUES ('$category','$name','$description','$openingtime','$closingtime','$address','$email','$website','$cacnumber','$country','$image','$phonenumber')";
             $res = mysqli_query($this->con, $sql) or die(mysqli_error($this->con));
             if ($res) {
                 $response['success'] = true;

@@ -1,64 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c400262e-5856-445d-8943-6a16b449f524" name="Default" comment="Reviews Changes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/passport.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/.babelrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/WebpackConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/dist/angular-file-upload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/dist/angular-file-upload.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/dist/angular-file-upload.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/dist/angular-file-upload.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/console-sham.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/console-sham.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/image-preview/controllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/image-preview/directives.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/image-preview/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/image-preview/upload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/image-preview/uploads/gap.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/simple/controllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/simple/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/simple/upload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/simple/uploads/gap.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/without-bootstrap/controllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/without-bootstrap/directives.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/without-bootstrap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/without-bootstrap/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/without-bootstrap/upload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/examples/without-bootstrap/uploads/gap.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/directives/FileDrop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/directives/FileOver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/directives/FileSelect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/services/FileDirective.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/services/FileDrop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/services/FileItem.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/services/FileLikeObject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/services/FileOver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/services/FileSelect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/services/FileUploader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/services/Pipeline.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-file-upload-master/src/values/options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/angular-file-upload.js" />
+    <list default="true" id="c400262e-5856-445d-8943-6a16b449f524" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/921e8b7eb11743d7a39d2f4cf7ecdaa4d79f1443.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/Udemy_dashboard02.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api/visitor.php" afterPath="$PROJECT_DIR$/api/api/visitor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/app.js" afterPath="$PROJECT_DIR$/assets/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/factory.js" afterPath="$PROJECT_DIR$/assets/js/factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newSchool.html" afterPath="$PROJECT_DIR$/newSchool.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schoolDetails.html" afterPath="$PROJECT_DIR$/schoolDetails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schoolleaderboard.html" afterPath="$PROJECT_DIR$/schoolleaderboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thank-you.html" afterPath="$PROJECT_DIR$/thank-you.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,8 +19,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="78" column="38" lean-forward="true" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
+            <state relative-caret-position="294">
+              <caret line="66" column="51" lean-forward="true" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -121,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schoolDetails.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="schoolDetails.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schoolDetails.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="203" column="45" lean-forward="false" selection-start-line="203" selection-start-column="45" selection-end-line="203" selection-end-column="45" />
+            <state relative-caret-position="304">
+              <caret line="205" column="42" lean-forward="true" selection-start-line="205" selection-start-column="42" selection-end-line="205" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -133,28 +80,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="visitor.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="visitor.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/api/visitor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2776">
-              <caret line="201" column="35" lean-forward="true" selection-start-line="201" selection-start-column="35" selection-end-line="201" selection-end-column="35" />
+            <state relative-caret-position="430">
+              <caret line="159" column="238" lean-forward="false" selection-start-line="159" selection-start-column="238" selection-end-line="159" selection-end-column="238" />
               <folding>
-                <marker date="1518472627228" expanded="true" signature="673:680" ph="SELECT s.id,... tblschools" />
-                <marker date="1518472627228" expanded="true" signature="673:833" ph="SELECT id, S... tblschools" />
-                <marker date="1518472627228" expanded="true" signature="673:881" ph="SELECT s.id,... tblschools" />
-                <marker date="1518472627228" expanded="true" signature="1148:1189" ph="SELECT * FRO... tblcategory" />
-                <marker date="1518472627228" expanded="true" signature="1450:1491" ph="SELECT id, R... tblreviewtype" />
-                <marker date="1518472627228" expanded="true" signature="1789:1842" ph="SELECT repor... tblreport" />
-                <marker date="1518472627228" expanded="true" signature="2204:2391" ph="SELECT tblsc... tblschool" />
-                <marker date="1518472627228" expanded="true" signature="2741:2848" ph="SELECT id, S... tblschools" />
-                <marker date="1518472627228" expanded="true" signature="3154:3177" ph="SELECT * FRO... tblreport" />
-                <marker date="1518472627228" expanded="true" signature="3786:3903" ph="INSERT INTO tblreport... " />
-                <marker date="1518472627228" expanded="true" signature="4949:5236" ph="INSERT INTO tblschool... " />
-                <marker date="1518472627228" expanded="true" signature="5789:5840" ph="UPDATE tblsc... " />
-                <marker date="1518472627228" expanded="true" signature="5789:5867" ph="UPDATE tblsc... " />
-                <marker date="1518472627228" expanded="true" signature="5789:5880" ph="UPDATE tblsc... " />
-                <marker date="1518472627228" expanded="true" signature="5789:5898" ph="UPDATE tblsc... " />
-                <marker date="1518472627228" expanded="true" signature="5795:5807" ph="INSERT INTO tblreviews... " />
+                <marker date="1518476261560" expanded="true" signature="673:680" ph="SELECT s.id,... tblschools" />
+                <marker date="1518476261560" expanded="true" signature="673:833" ph="SELECT id, S... tblschools" />
+                <marker date="1518476261560" expanded="true" signature="673:881" ph="SELECT s.id,... tblschools" />
+                <marker date="1518476261560" expanded="true" signature="1148:1189" ph="SELECT * FRO... tblcategory" />
+                <marker date="1518476261560" expanded="true" signature="1450:1491" ph="SELECT id, R... tblreviewtype" />
+                <marker date="1518476261560" expanded="true" signature="1789:1842" ph="SELECT repor... tblreport" />
+                <marker date="1518476261560" expanded="true" signature="2204:2391" ph="SELECT tblsc... tblschool" />
+                <marker date="1518476261560" expanded="true" signature="2741:2848" ph="SELECT id, S... tblschools" />
+                <marker date="1518476261560" expanded="true" signature="3154:3177" ph="SELECT * FRO... tblreport" />
+                <marker date="1518476261560" expanded="true" signature="3786:3903" ph="INSERT INTO tblreport... " />
+                <marker date="1518476261560" expanded="true" signature="4947:5250" ph="INSERT INTO tblschool... " />
+                <marker date="1518476261560" expanded="true" signature="5803:5854" ph="UPDATE tblsc... " />
+                <marker date="1518476261560" expanded="true" signature="5803:5881" ph="UPDATE tblsc... " />
+                <marker date="1518476261560" expanded="true" signature="5803:5894" ph="UPDATE tblsc... " />
+                <marker date="1518476261560" expanded="true" signature="5803:5912" ph="UPDATE tblsc... " />
+                <marker date="1518476261560" expanded="true" signature="5809:5821" ph="INSERT INTO tblreviews... " />
               </folding>
             </state>
           </provider>
@@ -227,12 +174,12 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/thank-you.html" />
         <option value="$PROJECT_DIR$/schoolleaderboard.html" />
-        <option value="$PROJECT_DIR$/api/api/visitor.php" />
         <option value="$PROJECT_DIR$/newSchool.html" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/assets/js/factory.js" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/schoolDetails.html" />
+        <option value="$PROJECT_DIR$/api/api/visitor.php" />
       </list>
     </option>
   </component>
@@ -363,7 +310,7 @@
       <workItem from="1518240571806" duration="2664000" />
       <workItem from="1518379309532" duration="14817000" />
       <workItem from="1518468512471" duration="1657000" />
-      <workItem from="1518469139793" duration="6799000" />
+      <workItem from="1518469139793" duration="7735000" />
     </task>
     <task id="LOCAL-00001" summary="Angular routing and controllers">
       <created>1517036166611</created>
@@ -435,11 +382,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518240657397</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Image Upload&#10;Rating/Review&#10;Leaderboard">
+      <created>1518476109997</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1518476109997</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129610000" />
+    <option name="totallyTimeSpent" value="130546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="151" width="1366" height="741" extended-state="6" />
@@ -480,7 +434,8 @@
     <MESSAGE value="Single School View" />
     <MESSAGE value="Just a few changes" />
     <MESSAGE value="Reviews Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reviews Changes" />
+    <MESSAGE value="Image Upload&#10;Rating/Review&#10;Leaderboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image Upload&#10;Rating/Review&#10;Leaderboard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -509,22 +464,22 @@
         <state relative-caret-position="216">
           <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
           <folding>
-            <marker date="1518472627228" expanded="true" signature="673:680" ph="SELECT s.id,... tblschools" />
-            <marker date="1518472627228" expanded="true" signature="673:833" ph="SELECT id, S... tblschools" />
-            <marker date="1518472627228" expanded="true" signature="673:881" ph="SELECT s.id,... tblschools" />
-            <marker date="1518472627228" expanded="true" signature="1148:1189" ph="SELECT * FRO... tblcategory" />
-            <marker date="1518472627228" expanded="true" signature="1450:1491" ph="SELECT id, R... tblreviewtype" />
-            <marker date="1518472627228" expanded="true" signature="1789:1842" ph="SELECT repor... tblreport" />
-            <marker date="1518472627228" expanded="true" signature="2204:2391" ph="SELECT tblsc... tblschool" />
-            <marker date="1518472627228" expanded="true" signature="2741:2848" ph="SELECT id, S... tblschools" />
-            <marker date="1518472627228" expanded="true" signature="3154:3177" ph="SELECT * FRO... tblreport" />
-            <marker date="1518472627228" expanded="true" signature="3786:3903" ph="INSERT INTO tblreport... " />
-            <marker date="1518472627228" expanded="true" signature="4949:5236" ph="INSERT INTO tblschool... " />
-            <marker date="1518472627228" expanded="true" signature="5789:5840" ph="UPDATE tblsc... " />
-            <marker date="1518472627228" expanded="true" signature="5789:5867" ph="UPDATE tblsc... " />
-            <marker date="1518472627228" expanded="true" signature="5789:5880" ph="UPDATE tblsc... " />
-            <marker date="1518472627228" expanded="true" signature="5789:5898" ph="UPDATE tblsc... " />
-            <marker date="1518472627228" expanded="true" signature="5795:5807" ph="INSERT INTO tblreviews... " />
+            <marker date="1518476261560" expanded="true" signature="673:680" ph="SELECT s.id,... tblschools" />
+            <marker date="1518476261560" expanded="true" signature="673:833" ph="SELECT id, S... tblschools" />
+            <marker date="1518476261560" expanded="true" signature="673:881" ph="SELECT s.id,... tblschools" />
+            <marker date="1518476261560" expanded="true" signature="1148:1189" ph="SELECT * FRO... tblcategory" />
+            <marker date="1518476261560" expanded="true" signature="1450:1491" ph="SELECT id, R... tblreviewtype" />
+            <marker date="1518476261560" expanded="true" signature="1789:1842" ph="SELECT repor... tblreport" />
+            <marker date="1518476261560" expanded="true" signature="2204:2391" ph="SELECT tblsc... tblschool" />
+            <marker date="1518476261560" expanded="true" signature="2741:2848" ph="SELECT id, S... tblschools" />
+            <marker date="1518476261560" expanded="true" signature="3154:3177" ph="SELECT * FRO... tblreport" />
+            <marker date="1518476261560" expanded="true" signature="3786:3903" ph="INSERT INTO tblreport... " />
+            <marker date="1518476261560" expanded="true" signature="4947:5250" ph="INSERT INTO tblschool... " />
+            <marker date="1518476261560" expanded="true" signature="5803:5854" ph="UPDATE tblsc... " />
+            <marker date="1518476261560" expanded="true" signature="5803:5881" ph="UPDATE tblsc... " />
+            <marker date="1518476261560" expanded="true" signature="5803:5894" ph="UPDATE tblsc... " />
+            <marker date="1518476261560" expanded="true" signature="5803:5912" ph="UPDATE tblsc... " />
+            <marker date="1518476261560" expanded="true" signature="5809:5821" ph="INSERT INTO tblreviews... " />
           </folding>
         </state>
       </provider>
@@ -816,31 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api/visitor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2776">
-          <caret line="201" column="35" lean-forward="true" selection-start-line="201" selection-start-column="35" selection-end-line="201" selection-end-column="35" />
-          <folding>
-            <marker date="1518472627228" expanded="true" signature="673:680" ph="SELECT s.id,... tblschools" />
-            <marker date="1518472627228" expanded="true" signature="673:833" ph="SELECT id, S... tblschools" />
-            <marker date="1518472627228" expanded="true" signature="673:881" ph="SELECT s.id,... tblschools" />
-            <marker date="1518472627228" expanded="true" signature="1148:1189" ph="SELECT * FRO... tblcategory" />
-            <marker date="1518472627228" expanded="true" signature="1450:1491" ph="SELECT id, R... tblreviewtype" />
-            <marker date="1518472627228" expanded="true" signature="1789:1842" ph="SELECT repor... tblreport" />
-            <marker date="1518472627228" expanded="true" signature="2204:2391" ph="SELECT tblsc... tblschool" />
-            <marker date="1518472627228" expanded="true" signature="2741:2848" ph="SELECT id, S... tblschools" />
-            <marker date="1518472627228" expanded="true" signature="3154:3177" ph="SELECT * FRO... tblreport" />
-            <marker date="1518472627228" expanded="true" signature="3786:3903" ph="INSERT INTO tblreport... " />
-            <marker date="1518472627228" expanded="true" signature="4949:5236" ph="INSERT INTO tblschool... " />
-            <marker date="1518472627228" expanded="true" signature="5789:5840" ph="UPDATE tblsc... " />
-            <marker date="1518472627228" expanded="true" signature="5789:5867" ph="UPDATE tblsc... " />
-            <marker date="1518472627228" expanded="true" signature="5789:5880" ph="UPDATE tblsc... " />
-            <marker date="1518472627228" expanded="true" signature="5789:5898" ph="UPDATE tblsc... " />
-            <marker date="1518472627228" expanded="true" signature="5795:5807" ph="INSERT INTO tblreviews... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newSchool.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
@@ -848,14 +778,6 @@
           <folding>
             <marker date="1518472688817" expanded="true" signature="9929:9944" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="78" column="38" lean-forward="true" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,10 +815,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/schoolDetails.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="203" column="45" lean-forward="false" selection-start-line="203" selection-start-column="45" selection-end-line="203" selection-end-column="45" />
+        <state relative-caret-position="304">
+          <caret line="205" column="42" lean-forward="true" selection-start-line="205" selection-start-column="42" selection-end-line="205" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#section#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="66" column="51" lean-forward="true" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api/visitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="159" column="238" lean-forward="false" selection-start-line="159" selection-start-column="238" selection-end-line="159" selection-end-column="238" />
+          <folding>
+            <marker date="1518476261560" expanded="true" signature="673:680" ph="SELECT s.id,... tblschools" />
+            <marker date="1518476261560" expanded="true" signature="673:833" ph="SELECT id, S... tblschools" />
+            <marker date="1518476261560" expanded="true" signature="673:881" ph="SELECT s.id,... tblschools" />
+            <marker date="1518476261560" expanded="true" signature="1148:1189" ph="SELECT * FRO... tblcategory" />
+            <marker date="1518476261560" expanded="true" signature="1450:1491" ph="SELECT id, R... tblreviewtype" />
+            <marker date="1518476261560" expanded="true" signature="1789:1842" ph="SELECT repor... tblreport" />
+            <marker date="1518476261560" expanded="true" signature="2204:2391" ph="SELECT tblsc... tblschool" />
+            <marker date="1518476261560" expanded="true" signature="2741:2848" ph="SELECT id, S... tblschools" />
+            <marker date="1518476261560" expanded="true" signature="3154:3177" ph="SELECT * FRO... tblreport" />
+            <marker date="1518476261560" expanded="true" signature="3786:3903" ph="INSERT INTO tblreport... " />
+            <marker date="1518476261560" expanded="true" signature="4947:5250" ph="INSERT INTO tblschool... " />
+            <marker date="1518476261560" expanded="true" signature="5803:5854" ph="UPDATE tblsc... " />
+            <marker date="1518476261560" expanded="true" signature="5803:5881" ph="UPDATE tblsc... " />
+            <marker date="1518476261560" expanded="true" signature="5803:5894" ph="UPDATE tblsc... " />
+            <marker date="1518476261560" expanded="true" signature="5803:5912" ph="UPDATE tblsc... " />
+            <marker date="1518476261560" expanded="true" signature="5809:5821" ph="INSERT INTO tblreviews... " />
           </folding>
         </state>
       </provider>
