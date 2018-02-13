@@ -8,10 +8,12 @@ app.factory('schoolhub', function ($http, $rootScope) {
             var parseId = function(school){
                 for(var i = 0; i < school.length; i++){
                     school[i][9] = parseInt(school[i][9]);
+                    school[i][13] = school[i][13] === null ? 0 : Math.round(parseFloat(school[i][13]));
                 }
                 return school;
             };
             $rootScope.allschools = parseId($rootScope.allschools);
+            console.log($rootScope.allschools);
             return data;
         }, function (error) {
             console.log(error);

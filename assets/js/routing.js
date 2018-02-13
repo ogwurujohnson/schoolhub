@@ -18,6 +18,9 @@ app.config(function ($routeProvider) {
     }).when('/thankYou',{
         templateUrl:'thank-you.html',
         controller:'mainController'
+    }).when('/thankYouNewSchool',{
+        templateUrl:'thank-you-new-school.html',
+        controller:'mainController'
     }).otherwise({
         templateUrl:'home.html',
         controller:'schoolController'

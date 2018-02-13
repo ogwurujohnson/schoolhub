@@ -33,7 +33,7 @@ class visitor
 
     public function allschools()
     {
-        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status, Total_Rating, Rate_Count, Description, Opening_Time, Closing_Time  FROM tblschools";
+        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status, Total_Rating, Rate_Count, Description, Opening_Time, Closing_Time, Total_Rating / Rate_Count AS Average_Rating  FROM tblschools";
         $res = mysqli_query($this->con, $sql);
         $result = [];
         while ($row = mysqli_fetch_row($res)) {
@@ -81,7 +81,7 @@ class visitor
     public function getparticularschooldetails($schoolid = '')
     {
         $id = $schoolid;
-        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status, Total_Rating, Rate_Count, Description, Opening_Time, Closing_Time FROM tblschools WHERE tblschools.id = '$id'";
+        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status, Total_Rating, Rate_Count, Description, Opening_Time, Closing_Time, Total_Rating / Rate_Count AS Average_Rating FROM tblschools WHERE tblschools.id = '$id'";
         $res = mysqli_query($this->con, $sql);
         $result = [];
         while ($row = mysqli_fetch_row($res)) {

@@ -4,7 +4,7 @@ app.controller('schoolController', function ($scope, schoolhub) {
     schoolhub.getAllSchools();
 });
 
-app.controller('addSchoolController', function($scope,schoolhub,$http){
+app.controller('addSchoolController', function($scope,schoolhub,$http,$window){
     schoolhub.getAllSchoolCategories();
     var controller = this;
     controller.form = [];
@@ -68,7 +68,7 @@ app.controller('addSchoolController', function($scope,schoolhub,$http){
             "closingtime":$scope.schoolclosingtime
         };
         schoolhub.addNewSchool(this.newSchool);
-            alert("School Registered Successfully!");
+        $window.location.href = 'index.html#!/thankYouNewSchool';
     };
 });
 
