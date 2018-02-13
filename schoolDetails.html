@@ -33,16 +33,11 @@
 												<i class="ti-location-pin mrg-r-5"></i>
                                                 {{singleSchool[0][3]+", "+singleSchool[0][4]}}
 											</a>
-											
 											<div class="rating-box">
 												<div class="detail-list-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
+													<i class="fa fa-star" ng-repeat="i in getNumber(singleSchool[0][13])"></i>
 												</div>
-												<a href="#" class="detail-rating-count">{{singleSchool[0][9]}} Average Rating</a>
+												<a href="#" class="detail-rating-count">{{singleSchool[0][13]}} Stars Average Rating</a>
 											</div>
 										</div>
 									</div>

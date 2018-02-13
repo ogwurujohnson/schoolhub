@@ -33,6 +33,13 @@ app.factory('schoolhub', function ($http, $rootScope) {
     schoolhubObject.getParticularSchoolDetails = function (id) {
         $http.get('api/visitor/getparticularschooldetails/'+id).then(function (data) {
             $rootScope.singleSchool = data.data;
+            var parseId = function(school){
+                    school[0][9] = parseInt(school[0][9]);
+                    school[0][13] = school[0][13] === null ? 0 : Math.round(parseFloat(school[0][13]));
+                return school;
+            };
+            $rootScope.singleSchool = parseId($rootScope.singleSchool);
+            console.log($rootScope.singleSchool);
             return data;
         }, function (error) {
             console.log(error);
