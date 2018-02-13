@@ -20,7 +20,7 @@
 				<div class="container">
 					<div class="col-md-10 col-sm-12 col-md-offset-1 mob-padd-0">
 						<!-- General Information -->
-                        <form method="post" ng-submit="schoolctrl.createSchool()" enctype="multipart/form-data">
+                        <form name="schoolForm" method="post" ng-submit="schoolctrl.createSchool()" enctype="multipart/form-data" novalidate>
 						<div class="add-listing-box general-info mrg-bot-25 padd-bot-30 padd-top-25">
 							<div class="listing-box-header">
 								<i class="ti-files theme-cl"></i>
@@ -29,9 +29,12 @@
 								<p>*fields are mandatory</p>
 							</div>
 								<div class="row mrg-r-10 mrg-l-10">
-									<div class="col-sm-6">
+									<div class="col-sm-6" ng-class="{ 'has-error' : schoolForm.schoolname.$invalid && !schoolForm.schoolname.$pristine }">
 										<label>School Name*</label>
-										<input type="text" class="form-control" required ng-model="schoolname">
+										<input type="text" name="schoolname" class="form-control" required ng-model="schoolname" ng-minlength="15" ng-maxlength="60">
+										<p ng-show="schoolForm.schoolname.$invalid && !schoolForm.schoolname.$pristine" class="help-block">School name is Required.</p>
+										<p ng-show="schoolForm.schoolname.$error.minlength" class="help-block">School Name is too Short.</p>
+										<p ng-show="schoolForm.schoolname.$error.maxlength" class="help-block">School Name is too Long.</p>
 									</div>
 									
 									<div class="col-sm-6">
