@@ -20,6 +20,26 @@ app.factory('schoolhub', function ($http, $rootScope) {
             return false;
         });
     };
+
+    schoolhubObject.getTopSchools = function (){
+        $http.get('api/visitor/topschools').then(function (data){
+            $rootScope.topschools = data.data;
+            var parseId = function(topschool){
+                for(var i = 0; i < topschool.length; i++){
+                    topschool[i][9] = parseInt(topschool[i][9]);
+                    topschool[i][13] = topschool[i][13] === null ? 0 : Math.round(parseFloat(topschool[i][13]));
+                }
+                return topschool;
+            };
+            $rootScope.topschools = parseId($rootScope.topschools);
+            console.log($rootScope.topschools);
+            return data;
+        }, function (error){
+            console.log(error);
+            return false;
+        });
+    };
+
     schoolhubObject.getAllSchoolCategories = function () {
         $http.get('api/visitor/allschoolcategories').then(function (data) {
             $rootScope.schoolCategories = data.data;

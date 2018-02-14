@@ -45,7 +45,7 @@ class visitor
 
     public function topschools()
     {
-        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status, Total_Rating, Rate_Count, Description, Opening_Time, Closing_Time, Total_Rating / Rate_Count AS Average_Rating FROM tblschools WHERE Status = '1' ORDER BY Average_Rating DESC LIMIT 0,6";
+        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status, Total_Rating, Rate_Count, Description, Opening_Time, Closing_Time, Total_Rating / Rate_Count AS Average_Rating FROM tblschools WHERE Status = '1' ORDER BY Average_Rating DESC LIMIT 0,7";
         $res = mysqli_query($this->con,$sql);
         $result = [];
         while ($row = mysqli_fetch_row($res)){
