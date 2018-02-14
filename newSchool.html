@@ -31,20 +31,21 @@
 								<div class="row mrg-r-10 mrg-l-10">
 									<div class="col-sm-6" ng-class="{ 'has-error' : schoolForm.schoolname.$invalid && !schoolForm.schoolname.$pristine }">
 										<label>School Name*</label>
-										<input type="text" name="schoolname" class="form-control" required ng-model="schoolname" ng-minlength="15" ng-maxlength="60">
-										<p ng-show="schoolForm.schoolname.$invalid && !schoolForm.schoolname.$pristine" class="help-block">School name is Required.</p>
+										<input type="text" name="schoolname" class="form-control" pattern="[a-z]*"  ng-model="schoolname" ng-minlength="16" ng-maxlength="60" required>
+										<p ng-show="schoolForm.schoolname.$invalid && !schoolForm.schoolname.$pristine" class="help-block">School name not valid.</p>
 										<p ng-show="schoolForm.schoolname.$error.minlength" class="help-block">School Name is too Short.</p>
 										<p ng-show="schoolForm.schoolname.$error.maxlength" class="help-block">School Name is too Long.</p>
 									</div>
 									
-									<div class="col-sm-6">
+									<div class="col-sm-6" ng-class="{ 'has-error' : schoolForm.schoolcategory.$invalid && !schoolForm.schoolcategory.$pristine }">
 										<label>Category*</label>
-										<select data-placeholder="Choose Category" class="form-control chosen-select" tabindex="2" required ng-model="schoolcategory">
-											<option value="">Select Category</option>
+										<select name="schoolcategory" data-placeholder="Choose Category" class="form-control chosen-select" tabindex="2" required ng-model="schoolcategory">
+											<option disabled selected value="">Select Category</option>
 											<option ng-repeat="category in schoolCategories" value="{{category[0]}}">
 												{{category[1]}}
 											</option>
 										</select>
+										<p ng-show="schoolForm.schoolcategory.$invalid && !schoolForm.schoolcategory.$pristine" class="help-block">Choose School Category</p>
 									</div>
 
                                     <div class="col-sm-6">
@@ -52,9 +53,10 @@
                                         <input type="text" class="form-control" required ng-model="schoolcacnumber">
                                     </div>
 
-									<div class="col-sm-6">
-										<label>Website</label>
-										<input type="text" class="form-control" ng-model="schoolwebsite" value="-" placeholder="-">
+									<div class="col-sm-6" ng-class="{ 'has-error' : schoolForm.schoolsite.$invalid && !schoolForm.schoolsite.$pristine }">
+										<label>Website*</label>
+										<input type="url" name="schoolsite" class="form-control" ng-model="schoolwebsite" pattern="https?://.+" title="add http://" value="-" placeholder="Type Nil if not available" required>
+										<p ng-show="schoolForm.schoolsite.$invalid && !schoolForm.schoolsite.$pristine" class="help-block">Invalid URL.</p>
 									</div>
 								</div>
 
@@ -94,12 +96,12 @@
 							</div>
 								<div class="row mrg-r-10 mrg-l-10">
 									<div class="col-sm-6">
-										<label>Email</label>
-										<input type="email" class="form-control" ng-model="schoolemail">
+										<label>Email*</label>
+										<input type="email" class="form-control" ng-model="schoolemail" required>
 									</div>
 									<div class="col-sm-6">
-										<label>Phone</label>
-										<input type="number" class="form-control" ng-model="schoolphonenumber">
+										<label>Phone*</label>
+										<input type="number" class="form-control" ng-model="schoolphonenumber" required>
 									</div>
 									<div class="col-sm-12">
 										<label>Description</label>
@@ -113,12 +115,12 @@
 						<div class="add-listing-box full-detail mrg-bot-25 padd-bot-30 padd-top-25">
 							<div class="listing-box-header">
 								<i class="ti-gallery theme-cl"></i>
-								<h3>Add Image</h3>
+								<h3>Add Image*</h3>
 							</div>
 							<div class="dropzone dz-clickable primary-dropzone">
 								<div class="dz-default dz-message">
 									<i class="ti-gallery"></i>
-                                    <input type="file" class="form-control" accept="image/*" onchange="angular.element(this).scope().uploadedImage(this)">
+                                    <input type="file" class="form-control" accept="image/*" onchange="angular.element(this).scope().uploadedImage(this)" required>
 								</div>
 							</div>
 						</div>
@@ -128,7 +130,7 @@
 						<div class="add-listing-box opening-day mrg-bot-25 padd-bot-30 padd-top-25">
 							<div class="listing-box-header">
 								<i class="ti-time theme-cl"></i>
-								<h3>Opening Hours</h3>
+								<h3>Opening Hours*</h3>
 							</div>
 								<div class="row mrg-r-10 mrg-l-10">
 									<div class="col-sm-12 mob-padd-0">
@@ -200,7 +202,7 @@
 						</div>
 						<!-- End Opening Hours Information -->
 						<div class="text-center">
-							<button class="btn theme-btn" title="Submit Listing">Submit School</button>
+							<button class="btn theme-btn" title="Add School" ng-disabled="schoolForm.$invalid">Submit School</button>
 						</div>
                         </form>
 					</div>
