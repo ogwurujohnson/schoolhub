@@ -40,6 +40,25 @@ app.factory('schoolhub', function ($http, $rootScope) {
         });
     };
 
+    schoolhubObject.getLeaderBoard = function (){
+        $http.get('api/visitor/schoolleaderboard').then(function (data){
+            $rootScope.schoolleaderboard = data.data;
+            var parseId = function(leaderboard){
+                for(var i = 0; i < leaderboard.length; i++){
+                    leaderboard[i][9] = parseInt(leaderboard[i][9]);
+                    leaderboard[i][13] = leaderboard[i][13] === null ? 0 : Math.round(parseFloat(leaderboard[i][13]));
+                }
+                return leaderboard;
+            };
+            $rootScope.schoolleaderboard = parseId($rootScope.schoolleaderboard);
+            console.log($rootScope.schoolleaderboard);
+            return data;
+        }, function (error){
+            console.log(error);
+            return false;
+        });
+    };
+
     schoolhubObject.getAllSchoolCategories = function () {
         $http.get('api/visitor/allschoolcategories').then(function (data) {
             $rootScope.schoolCategories = data.data;
