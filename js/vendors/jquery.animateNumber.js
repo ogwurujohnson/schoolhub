@@ -94,9 +94,8 @@
                 current_number_part = current_number_part + numbers[current_index];
               }
               number_parts.push(current_number_part);
-            };
-
-            // remove precending zeros
+            }
+              // remove precending zeros
             var last = number_parts[number_parts.length - 1];
             number_parts[number_parts.length - 1] = parseInt(last);
 

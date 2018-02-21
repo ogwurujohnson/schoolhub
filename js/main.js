@@ -60,21 +60,21 @@ responsive: true
 
     $('.is-prev').on('click', function() {
 
-        $('#intro6-slider').flexslider('prev')
+        $('#intro6-slider').flexslider('prev');
 
         return false;
 
-    })
+    });
 
 
 
     $('.is-next').on('click', function() {
 
-        $('#intro6-slider').flexslider('next')
+        $('#intro6-slider').flexslider('next');
 
         return false;
 
-    })
+    });
 
 
 
@@ -152,7 +152,7 @@ $('body').scrollspy({
 
    offset: 105
 
-})
+});
 
 
 

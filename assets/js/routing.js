@@ -1,7 +1,7 @@
 var app = angular.module('schoolRouting', ['ngRoute']);
 app.config(function ($routeProvider) {
     $routeProvider.when('/', {
-        templateUrl: 'home.html',
+        templateUrl: 'landing.html',
         controller:'schoolController'
     }).when('/newSchool', {
         templateUrl: 'newSchool.html',
@@ -22,7 +22,7 @@ app.config(function ($routeProvider) {
         templateUrl:'thank-you-new-school.html',
         controller:'mainController'
     }).otherwise({
-        templateUrl:'home.html',
+        templateUrl:'landing.html',
         controller:'schoolController'
     });
 });
