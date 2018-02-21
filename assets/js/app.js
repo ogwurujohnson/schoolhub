@@ -2,6 +2,8 @@ var app = angular.module('schoolApp',['schoolRouting','schoolHubDAO']);
 app.controller('schoolController', function ($scope, schoolhub) {
     schoolhub.getAllSchoolCategories();
     schoolhub.getAllSchools();
+    schoolhub.getTopSchools();
+    schoolhub.getLeaderBoard();
 });
 
 app.controller('addSchoolController', function($scope,schoolhub,$http,$window){

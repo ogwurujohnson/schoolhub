@@ -66,18 +66,18 @@
 					</div>
                     <div ng-controller="schoolController">
 					<div class="row">
-						<div class="col-md-4 col-sm-6" ng-repeat="school in allschools | orderBy:'school[9]':false | limitTo:6">
+						<div class="col-md-4 col-sm-6" ng-repeat="topschool in topschools | orderBy:'topschool[9]':false | limitTo:6">
 							<div class="listing-shot grid-style">
-                                <div ng-show="school[7]==1" class="listing-badge now-open">Verified</div>
-								<a href="{{'#!/schoolDetails/'+school[0]}}">
+                                <div ng-show="topschool[7]==1" class="listing-badge now-open">Verified</div>
+								<a href="{{'#!/schoolDetails/'+topschool[0]}}">
 									<div class="listing-shot-img">
-										<img ng-src="{{school[5]}}" class="img-responsive" alt="">
-                                        <span ng-show="school[7]==1" class="approve-listing"><i class="fa fa-check"></i></span>
+										<img ng-src="{{topschool[5]}}" class="img-responsive" alt="">
+                                        <span ng-show="topschool[7]==1" class="approve-listing"><i class="fa fa-check"></i></span>
 										<span class="like-listing"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 									</div>
 									<div class="listing-shot-caption">
-										<h4>{{school[1]}}</h4>
-										<p class="listing-location">{{school[3]+", "+school[4]}}</p>
+										<h4>{{topschool[1]}}</h4>
+										<p class="listing-location">{{topschool[3]+", "+topschool[4]}}</p>
 									</div>
 								</a>
 								<div class="listing-shot-info">
@@ -100,7 +100,7 @@
 											</span>
 										</div>
 										<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-											<a href="{{'#!/schoolDetails/'+school[0]}}" class="detail-link">Rate Now</a>
+											<a href="{{'#!/schoolDetails/'+topschool[0]}}" class="detail-link">Rate Now</a>
 										</div>
 									</div>
 								</div>

@@ -13,19 +13,19 @@
 				</div>
 			</section>
 			<div class="clearfix"></div>
-			<!-- ================ End Page Title ======================= -->
+			<!-- ================= End Page Title ======================= -->
 			
 			<!-- ================ Place Listing Stayle ======================= -->
 			<section>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 col-sm-4" ng-repeat="school in allschools | orderBy:'school[9]':false">
-							<a href="{{'#!/schoolDetails/'+school[0]}}" class="place-box">
-								<span class="listing-count">{{school[9]}} Rating</span>
+						<div class="col-md-4 col-sm-4" ng-repeat="leaderboard in schoolleaderboard | orderBy:'leaderboard[9]':false">
+							<a href="{{'#!/schoolDetails/'+leaderboard[0]}}" class="place-box">
+								<span class="listing-count">{{leaderboard[9]}} Rating</span>
 								<div class="place-box-content">
-									<h4>{{school[1]}}</h4>
+									<h4>{{leaderboard[1]}}</h4>
 								</div>
-								<div class="place-box-bg" style="background-image: url({{school[5]}});"></div>
+								<div class="place-box-bg" style="background-image: url({{leaderboard[5]}});"></div>
 							</a>
 						</div>
 						

@@ -43,6 +43,31 @@ class visitor
         echo json_encode($result);
     }
 
+    public function topschools()
+    {
+        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status, Total_Rating, Rate_Count, Description, Opening_Time, Closing_Time, Total_Rating / Rate_Count AS Average_Rating FROM tblschools WHERE Status = '1' ORDER BY Average_Rating DESC LIMIT 0,7";
+        $res = mysqli_query($this->con,$sql);
+        $result = [];
+        while ($row = mysqli_fetch_row($res)){
+            $result[] = $row;
+        }
+        header('Content-Type:application/json');
+        echo json_encode($result);
+    }
+
+    public function schoolleaderboard()
+    {
+        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status, Total_Rating, Rate_Count,Description, Opening_Time, Closing_Time, Total_Rating / Rate_Count AS Average_Rating FROM tblschools WHERE Status = '1' ORDER BY Average_Rating DESC";
+        $res = mysqli_query($this->con,$sql);
+        $result = [];
+        while ($row = mysqli_fetch_row($res)){
+            $result[] = $row;
+        }
+        header('Content-Type:application/json');
+        echo json_encode($result);
+    }
+
+
     public function allschoolcategories()
     {
         $sql = "SELECT id, Category_Name FROM tblcategory";
