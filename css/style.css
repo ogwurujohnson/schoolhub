@@ -603,8 +603,8 @@ input:focus, button:focus, .slick-slide {
 }
 
 .intro-form .btn.btn-primary {
-	background-color: #ff710cfa;
-	border: 2px solid #ff710cfa;
+	background-color: #8d60ad;
+	border: 2px solid #8d60ad;
 	padding: 20px;
     padding-top:0;
 	height: 45px;
@@ -615,8 +615,8 @@ input:focus, button:focus, .slick-slide {
 
 
 .intro-form .btn.btn-primary:hover  {
-	background-color: rgba(250, 96, 0, 0.61);
-	border: 2px solid rgba(250, 96, 0, 0.61);
+	background-color: #4c75d0;
+	border: #4c75d0;
 	padding: 0px 20px;
 	height: 45px;
 	line-height: 45px;
