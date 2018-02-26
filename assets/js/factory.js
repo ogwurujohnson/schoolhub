@@ -13,7 +13,6 @@ app.factory('schoolhub', function ($http, $rootScope) {
                 return school;
             };
             $rootScope.allschools = parseId($rootScope.allschools);
-            console.log($rootScope.allschools);
             return data;
         }, function (error) {
             console.log(error);
@@ -32,7 +31,6 @@ app.factory('schoolhub', function ($http, $rootScope) {
                 return topschool;
             };
             $rootScope.topschools = parseId($rootScope.topschools);
-            console.log($rootScope.topschools);
             return data;
         }, function (error){
             console.log(error);
@@ -51,7 +49,6 @@ app.factory('schoolhub', function ($http, $rootScope) {
                 return leaderboard;
             };
             $rootScope.schoolleaderboard = parseId($rootScope.schoolleaderboard);
-            console.log($rootScope.schoolleaderboard);
             return data;
         }, function (error){
             console.log(error);

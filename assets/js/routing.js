@@ -12,9 +12,18 @@ app.config(function ($routeProvider) {
     }).when('/schoolLeaderBoard', {
         templateUrl: 'schoolleaderboard.html',
         controller: 'schoolController'
+    }).when('/createAdvert',{
+        templateUrl:'create-ad.html',
+        controller:'mainController'
+    }).when('/viewAdvert',{
+        templateUrl:'ad-listing.html',
+        controller:'mainController'
     }).when('/searchSchool',{
         templateUrl:'searchSchool.html',
         controller:'schoolController'
+    }).when('/search/:query',{
+        templateUrl:'search.html',
+        controller:'searchQueryController'
     }).when('/thankYou',{
         templateUrl:'thank-you.html',
         controller:'mainController'

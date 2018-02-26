@@ -1,7 +1,5 @@
-<link rel="stylesheet" href="css/style.css" />
-
+<div style="background: #fff url(images/bg/4.jpg) no-repeat;">
 <div ng-include=" 'template-header-1.html' "></div>
-
 	<!-- INTRO -->
 	<div class="intro intro-style4">
 		<div class="overlay"></div>
@@ -9,11 +7,11 @@
 			<div class="col-md-8 col-md-offset-2">
 				<div class="intro4-inner">
 					<center><p><img src="assets/img/schoolhub.png" width="20%" height="50%"/></p></center>
-					
-					<div class="intro-form">
-						<form action="#" method="POST">
+
+					<div class="intro-form" ng-controller="schoolController">
+						<form name="searchForm" method="post" ng-submit="searchSchool()">
 							<div class="col-md-11">
-								<input name="fname" placeholder="Find a school" type="text" required/>
+								<input name="txtquery" placeholder="Find a school" type="text" required ng-model="txtquery"/>
 							</div>
 							<div class="col-md-1 div-btn">
 								<button type="submit" class="btn btn-primary btn-block"><i class="fa fa-search"></i></button>
@@ -21,16 +19,15 @@
 							<br> <br> <br>
 							<br>
 						</form>
-							
+
 						<span id="result"></span>
 					</div>
 					<div class="clearfix"></div>
-					
+
 				</div>
 			</div>
 		</div>
 	</div>
-
-	
 	<!-- CONTACT -->
 	<div ng-include=" 'template-footer-2.html' "></div>
+</div>

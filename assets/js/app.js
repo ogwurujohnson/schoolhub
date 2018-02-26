@@ -1,9 +1,20 @@
 var app = angular.module('schoolApp',['schoolRouting','schoolHubDAO']);
-app.controller('schoolController', function ($scope, schoolhub) {
+
+app.controller('schoolController', function ($scope, schoolhub, $window) {
     schoolhub.getAllSchoolCategories();
     schoolhub.getAllSchools();
     schoolhub.getTopSchools();
     schoolhub.getLeaderBoard();
+
+    $scope.searchSchool = function(){
+        $window.location.href = '#!/search/'+$scope.txtquery;
+    };
+});
+
+app.controller('searchQueryController', function($scope,$routeParams,schoolhub,$rootScope){
+    var query = $routeParams.query;
+    schoolhub.getAllSchools();
+    $scope.keyword = query;
 });
 
 app.controller('addSchoolController', function($scope,schoolhub,$http,$window){
@@ -86,6 +97,7 @@ app.controller('singleSchoolController', function($scope,$routeParams,schoolhub,
         return numarray;
     };
 });
+
 app.controller('reviewController', function($scope, schoolhub, $routeParams, $rootScope, $window){
     schoolhub.getAllReviewTypes();
     var controller = this;
