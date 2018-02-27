@@ -1,33 +1,23 @@
-<div style="background: #fff url(images/bg/4.jpg) no-repeat;">
-<div ng-include=" 'template-header-1.html' "></div>
-	<!-- INTRO -->
-	<div class="intro intro-style4">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="col-md-8 col-md-offset-2">
-				<div class="intro4-inner">
-					<center><p><img src="assets/img/schoolhub.png" width="20%" height="50%"/></p></center>
 
-					<div class="intro-form" ng-controller="schoolController">
-						<form name="searchForm" method="post" ng-submit="searchSchool()">
-							<div class="col-md-11">
-								<input name="txtquery" placeholder="Find a school" type="text" required ng-model="txtquery"/>
-							</div>
-							<div class="col-md-1 div-btn">
-								<button type="submit" class="btn btn-primary btn-block"><i class="fa fa-search"></i></button>
-							</div>
-							<br> <br> <br>
-							<br>
-						</form>
 
-						<span id="result"></span>
+	<!-- Main Banner Section Start -->
+			<div class="banner light-opacity" style="background-image:url(assets/img/slider-1.jpg);height: 653px;width: 100%;">  
+				<div class="container">
+					<div class="banner-caption">
+						<div class="col-md-16 col-sm-16 banner-text">
+							<form name="searchForm" method="post" ng-submit="searchSchool()" class="form-verticle">
+							
+								<div class="col-md-10 col-sm-10 no-padd">
+									<i class="banner-icon icon-pencil"></i>
+									<input name="txtquery" type="text" class="form-control left-radius right-br" required ng-model="txtquery" placeholder="Keywords..">
+								</div>
+								<div class="col-md-2 col-sm-2 no-padd">
+									<button type="submit" class="btn theme-btn btn-default">Search</button>
+								</div>
+								
+							</form>
+						</div>
 					</div>
-					<div class="clearfix"></div>
-
 				</div>
 			</div>
-		</div>
-	</div>
-	<!-- CONTACT -->
-	<div ng-include=" 'template-footer-2.html' "></div>
-</div>
+			<div class="clearfix"></div>
