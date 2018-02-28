@@ -66,7 +66,7 @@
 					
 					<!-- Start Header Navigation -->
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">
+						<a class="navbar-brand" href="../index.html">
 							<img src="assets/img/logo-white.png" class="logo logo-display" alt="">
 							<img src="assets/img/logo.png" class="logo logo-scrolled" alt="">
 						</a>
@@ -77,12 +77,12 @@
 						<ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
 							<li><a class="page-scroll" href="../index.html#!/schoolLeaderBoard">LeaderBoard</a></li>
 							<li><a class="page-scroll" href="index.php">Create Ad</a></li>
-							<li><a class="page-scroll" href="ad-listing.html">View All Ad's</a></li>
+							<li><a class="page-scroll" href="ad-listing.php">View All Ad's</a></li>
 							<li><a class="page-scroll" href="#">About</a></li>
 							<li><a class="page-scroll" href="../index.html#!/privacy">Privacy Policy</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-							<li class="no-pd"><a href="#!/newSchool" class="addlist"><i class="ti-user" aria-hidden="true"></i>Add A School</a></li>
+							<li class="no-pd"><a href="../index.html#!/newSchool" class="addlist"><i class="ti-user" aria-hidden="true"></i>Add A School</a></li>
 						</ul>
 					</div>
 					<!-- /.navbar-collapse -->
@@ -232,7 +232,7 @@
 					return document.getElementById("schoolid").value;
 				}
 				var schoolid = schoolId();
-				var variable = 'SchoolHub - '+Math.floor((Math.random() * 1000000000) + 1);
+				var variable = 'SchoolHub-'+Math.floor((Math.random() * 1000000000) + 1);
 				
 				function payWithPaystack(){
 					var handler = PaystackPop.setup({

@@ -66,7 +66,7 @@
 					
 					<!-- Start Header Navigation -->
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">
+						<a class="navbar-brand" href="../index.html">
 							<img src="assets/img/logo-white.png" class="logo logo-display" alt="">
 							<img src="assets/img/logo.png" class="logo logo-scrolled" alt="">
 						</a>
@@ -82,7 +82,7 @@
 							<li><a class="page-scroll" href="../index.html#!/privacy">Privacy Policy</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-							<li class="no-pd"><a href="#!/newSchool" class="addlist"><i class="ti-user" aria-hidden="true"></i>Add A School</a></li>
+							<li class="no-pd"><a href="../index.html#!/newSchool" class="addlist"><i class="ti-user" aria-hidden="true"></i>Add A School</a></li>
 						</ul>
 					</div>
 					<!-- /.navbar-collapse -->
@@ -131,8 +131,7 @@
 										<div class="form-group">
 											<label class="control-label col-xs-3">Sort By:</label>
 											<div class="col-xs-9">
-												<select class="form-control">
-													<option value="download_name_tag" selected="selected">Theme Name</option>
+												<select class="form-control" disabled>
 													<option value="timestamp">Last Updated</option>
 												</select>
 											</div>
@@ -142,8 +141,7 @@
 										<div class="form-group">
 											<label class="control-label col-xs-3">Author:</label>
 											<div class="col-xs-9">
-												<select class="form-control">
-													<option value="download_name_tag" selected="selected">Theme Name</option>
+												<select class="form-control" disabled>
 													<option value="timestamp">Last Updated</option>
 												</select>
 											</div>
@@ -153,47 +151,43 @@
 							</div>
 							<div class="col-md-4">
 								<div class="full-right search-wrapper">
-									<input type="search" class="form-control" placeholder="Filter by keyword...">
+									<input type="search" class="form-control" placeholder="Filter by keyword..." disabled>
 								</div>
 							</div>
 						</div>
 						<!-- End Filter Option -->
 						
 						<!-- Start All Ad List -->
+						<?php
+								require('paystack/db.php');
+								$query = "select tbladverts.ad_title,tbladverts.schoolid,tblschools.School_Name,tbladverts.date,tbladverts.ad_duration from tbladverts, tblschools where tblschools.id = tbladverts.schoolid";
+								$res = mysqli_query($conn, $query);
+						?>
 						<div class="row">
 							<div class="col-md-12">
 								<div class="small-list-wrapper">
 								<ul>
-									<li>
-										<div class="small-listing-box light-gray">
-											<div class="small-list-img">
-												<img src="assets/img/image-1.jpg" class="img-responsive" alt="" />
-											</div>
-											<div class="small-list-detail">
-												<h4>University of Nigeria</h4>
-												<p><a href="#" title="Food & restaurant">Vacancy for lecturer II</a> | Jan 10 2018</p>
-											</div>
-											<div class="small-list-action">
-												<a href="#" class="light-gray-btn btn-square" data-placement="top" data-toggle="tooltip" title="View Ad"><i class="glyphicon glyphicon-eye-open"></i></a>
-												
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="small-listing-box light-gray">
-											<div class="small-list-img">
-												<img src="assets/img/image-1.jpg" class="img-responsive" alt="" />
-											</div>
-											<div class="small-list-detail">
-												<h4>Uni Jos</h4>
-												<p><a href="#" title="Food & restaurant">Cleaner Vacancy</a> | Jan 10 2018</p>
-											</div>
-											<div class="small-list-action">
-												<a href="#" class="light-gray-btn btn-square" data-placement="top" data-toggle="tooltip" title="View Ad"><i class="glyphicon glyphicon-eye-open"></i></a>
-												
-											</div>
-										</div>
-									</li>
+									<?php
+										while($row = mysqli_fetch_array($res))
+										{
+											$schoolname = $row['School_Name'];
+											$title = $row['ad_title'];
+											$date = $row['date'];
+											echo '<li>
+												<div class="small-listing-box light-gray">
+													<div class="small-list-img"></div>
+													<div class="small-list-detail">
+														<h4>'.$schoolname.'</h4>
+														<p><a href="#" title="Food & restaurant">'.$title.'</a> |date published:'.$date.'</p>
+													</div>
+													<div class="small-list-action">
+														<a href="#" class="light-gray-btn btn-square" data-placement="top" data-toggle="tooltip" title="View Ad"><i class="glyphicon glyphicon-eye-open"></i></a>
+														
+													</div>
+												</div>
+											</li>';
+										}
+									?>
 								</ul>
 								</div>
 							</div>

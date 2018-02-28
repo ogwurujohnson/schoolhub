@@ -15,6 +15,6 @@
 	$insert_v = mysqli_query($conn,$query);
 
 	if ($insert_v){
-		header('Location: http://google.com');
+		header('Location:  http://localhost/schoolhub/ad/ad-listing.php');
 	}
 ?>
