@@ -232,24 +232,25 @@
 					return document.getElementById("schoolid").value;
 				}
 				var schoolid = schoolId();
+				var variable = 'SchoolHub - '+Math.floor((Math.random() * 1000000000) + 1);
 				
 				function payWithPaystack(){
 					var handler = PaystackPop.setup({
 					key: 'pk_test_cfc7b44c08d96a3a09e37e046a670266b7e2615c',
 					email: usersEmail(),
 					amount: usersAmount(),
-					ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+					ref: variable, // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
 					metadata: {
 						custom_fields: [
 							{
 								display_name: "Mobile Number",
 								variable_name: "mobile_number",
-								value: "+2348012345678"
+								value: usersPhone()
 							}
 						]
 					},
 					callback: function(response){
-						window.location = "entry.php?email="+usersEmail()+"&amount="+usersAmount()+"&schoolid="+schoolId()+"&duration="+adDuration()+"&description="+adDescription()+"&title="+adTitle()+"&phone="+usersPhone();
+						window.location = "paystack/entry.php?email="+usersEmail()+"&amount="+usersAmount()+"&schoolid="+schoolId()+"&duration="+adDuration()+"&description="+adDescription()+"&title="+adTitle()+"&phone="+usersPhone()+"&refid="+variable;
 					},
 					onClose: function(){
 						alert('window closed');

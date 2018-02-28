@@ -1,17 +1,20 @@
 <?php
 	require('db.php');
 	$amount = $_GET['amount'];
-	$user_id = $_GET['user_id'];
+	$email = $_GET['email'];
+	$school_id = $_GET['schoolid'];
+	$duration = $_GET['duration'];
+	$description = $_GET['description'];
+	$title = $_GET['title'];
+	$phone = $_GET['phone'];
+	$refid = $_GET['refid'];
 	
 	//modified paystack code
-	$query = "INSERT into tblpayments (Amount,User_Id) VALUES ('$amount','$user_id')";
+	$query = "INSERT into tbladverts (payment_id,schoolid,ad_title,ad_description,contact_email,contact_phone,ad_duration,ad_cost) 
+	VALUES ('$refid','$school_id','$title','$description','$email','$phone','$duration','$amount')";
 	$insert_v = mysqli_query($conn,$query);
 
-    $query = "UPDATE tblwallet SET balance = balance + $amount WHERE user_id = $user_id ";
-    $insert_v = mysqli_query($conn,$query);
-    $sql1 = "INSERT into tblcreditdebit (user_id,transaction_description,transaction_type,amount) VALUES ('$user_id','Wallet Funding','credit','$amount')";
-    $res1 = mysqli_query($conn,$sql1);
 	if ($insert_v){
-		header('Location: http://localhost/gafista/user/uvwallet.html');
+		header('Location: http://google.com');
 	}
 ?>
