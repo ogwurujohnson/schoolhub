@@ -149,17 +149,22 @@ class visitor
         $description = $data['reviewdescription'];
         $stars = $data['reviewstars'];
 
-        $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$stars[0]', 1)";
-        $res = mysqli_query($sql);
+        $facilities = $stars["Facilities"];
+        $academic = $stars["Academic"];
+        $quality = $stars["Quality"];
+        $learning = $stars["Learning"];
+
+        $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$facilities', '1')";
+        $res = mysqli_query($this->con,$sql);
         if($res){
-            $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$stars[1]', 2)";
-            $res = mysqli_query($sql);
+            $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$academic', '2')";
+            $res = mysqli_query($this->con,$sql);
             if($res){
-                $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$stars[2]', 3)";
-                $res = mysqli_query($sql);
+                $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$quality', '3')";
+                $res = mysqli_query($this->con,$sql);
                 if($res){
-                    $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$stars[3]', 4)";
-                    $res = mysqli_query($sql);
+                    $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$learning', '4')";
+                    $res = mysqli_query($this->con,$sql);
                     if($res){
                         $response['success'] = true;
                     }else{
@@ -173,7 +178,6 @@ class visitor
             }
         }
     }
-
 
     public function addNewSchool()
     {

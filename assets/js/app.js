@@ -159,7 +159,8 @@ app.controller('reviewController', function($scope, schoolhub, $routeParams, $ro
             }).catch(function (error) {
             console.log('Error; SMS not sent');
             console.log(error);
-            alert('Oops! An error ocurred. Re-enter phone number to receive verification code.');
+            alert('Oops! An error ocurred. Please check your network and try again.');
+            $window.location.reload();
             vm.stepSix();
         });
     }
@@ -195,6 +196,8 @@ app.controller('reviewController', function($scope, schoolhub, $routeParams, $ro
             "reviewstars":reviewstars,
             "reviewphonenumber":vm.reviewphonenumber
         };
+
+        console.log(this.newReview);
         schoolhub.addReview(this.newReview, schoolId);
         //controller.updateReview();
     };
