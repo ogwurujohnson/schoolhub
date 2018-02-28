@@ -47,15 +47,15 @@ button.btn.btn-package {
 }
 /*----button colors---*/
 .theme-btn {
-    background: #ff431e;
-    border: 1px solid #ff431e;
+    background: #4300fc;
+    border: 1px solid #4300fc;
 	color:#ffffff;
 	text-transform:uppercase;
 }
 .theme-btn:hover, .theme-btn:focus{
 	color:#ffffff;
-	background: #ff431e;
-    border: 1px solid #ff431e;
+	background: #7d0aa8;
+    border: 1px solid #7d0aa8;
 }
 btn.theme-btn-outlined, a.theme-btn-outlined{
 	background:transparent;

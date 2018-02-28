@@ -145,24 +145,35 @@ class visitor
     {
         $response = [];
         $data = json_decode(file_get_contents("php://input"), true);
-        $type = $data['reviewtype'];
+        $phone = $data['reviewphonenumber'];
         $description = $data['reviewdescription'];
-        $stars = $data['stars'];
+        $stars = $data['reviewstars'];
 
-        if (!empty($type) && !empty($description) && !empty($stars)) {
-            $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid','$description','$stars','$type')";
-            $res = mysqli_query($this->con, $sql) or die(mysqli_error($this->con));
-            if ($res) {
-                $response['success'] = true;
-            } else {
-                $response['success'] = false;
+        $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$stars[0]', 1)";
+        $res = mysqli_query($sql);
+        if($res){
+            $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$stars[1]', 2)";
+            $res = mysqli_query($sql);
+            if($res){
+                $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$stars[2]', 3)";
+                $res = mysqli_query($sql);
+                if($res){
+                    $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$stars[3]', 4)";
+                    $res = mysqli_query($sql);
+                    if($res){
+                        $response['success'] = true;
+                    }else{
+                        $response['success'] =false;
+                    }
+                }else{
+                    $response['success'] =false;
+                }
+            }else{
+                $response['success'] =false;
             }
-        } else {
-            $response['error'] = "empty";
         }
-        echo json_encode($response);
-
     }
+
 
     public function addNewSchool()
     {

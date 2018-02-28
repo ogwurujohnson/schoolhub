@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c400262e-5856-445d-8943-6a16b449f524" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/search.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/logo-white.png.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/angular-animate.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api/visitor.php" afterPath="$PROJECT_DIR$/api/api/visitor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/colors/main.css" afterPath="$PROJECT_DIR$/assets/css/colors/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/app.js" afterPath="$PROJECT_DIR$/assets/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/factory.js" afterPath="$PROJECT_DIR$/assets/js/factory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/routing.js" afterPath="$PROJECT_DIR$/assets/js/routing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/form-step.js" afterPath="$PROJECT_DIR$/assets/js/form-step.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landing.html" afterPath="$PROJECT_DIR$/landing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newSchool.html" afterPath="$PROJECT_DIR$/newSchool.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schoolDetails.html" afterPath="$PROJECT_DIR$/schoolDetails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schoolleaderboard.html" afterPath="$PROJECT_DIR$/schoolleaderboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchSchool.html" afterPath="$PROJECT_DIR$/searchSchool.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-header-1.html" afterPath="$PROJECT_DIR$/template-header-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-header-2.html" afterPath="$PROJECT_DIR$/template-header-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-footer-2.html" afterPath="$PROJECT_DIR$/template-footer-2.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,78 +24,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="template-header-2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template-header-2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="22" column="92" lean-forward="false" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="92" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="landing.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/landing.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="75" lean-forward="false" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schoolleaderboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schoolleaderboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="1224">
+              <caret line="138" column="7" lean-forward="false" selection-start-line="138" selection-start-column="7" selection-end-line="138" selection-end-column="7" />
               <folding>
-                <marker date="1519588460226" expanded="false" signature="1224:1231" ph="..." />
+                <marker date="1519840806996" expanded="true" signature="3989:5422" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template-header-1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template-header-1.html">
+      <file leaf-file-name="template-footer-2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template-footer-2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
-              <caret line="19" column="70" lean-forward="false" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+              <caret line="19" column="80" lean-forward="false" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newSchool.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newSchool.html">
+      <file leaf-file-name="schoolDetails.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/schoolDetails.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="23" column="117" lean-forward="false" selection-start-line="23" selection-start-column="117" selection-end-line="23" selection-end-column="117" />
+            <state relative-caret-position="5645">
+              <caret line="321" column="45" lean-forward="false" selection-start-line="321" selection-start-column="45" selection-end-line="321" selection-end-column="45" />
               <folding>
-                <element signature="n#style#0;n#section#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visitor.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/api/visitor.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="159" column="25" lean-forward="true" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
+              <folding>
+                <marker date="1519842284611" expanded="true" signature="673:878" ph="SELECT id, S... tblschools" />
+                <marker date="1519842284611" expanded="true" signature="1184:1446" ph="SELECT id, S... tblschools" />
+                <marker date="1519842284611" expanded="true" signature="1757:2008" ph="SELECT id, S... tblschools" />
+                <marker date="1519842284611" expanded="true" signature="2322:2363" ph="SELECT id, C... tblcategory" />
+                <marker date="1519842284611" expanded="true" signature="2624:2665" ph="SELECT id, R... tblreviewtype" />
+                <marker date="1519842284611" expanded="true" signature="2963:3016" ph="SELECT repor... tblreport" />
+                <marker date="1519842284611" expanded="true" signature="3378:3610" ph="SELECT id, S... tblschools" />
+                <marker date="1519842284611" expanded="true" signature="3960:4067" ph="SELECT id, S... " />
+                <marker date="1519842284611" expanded="true" signature="4373:4396" ph="SELECT * FRO... tblreport" />
+                <marker date="1519842284611" expanded="true" signature="4944:5047" ph="INSERT INTO tblreviews... " />
+                <marker date="1519842284611" expanded="true" signature="4944:5061" ph="INSERT INTO tblreviews... " />
+                <marker date="1519842284611" expanded="true" signature="5137:5254" ph="INSERT INTO tblreviews... " />
+                <marker date="1519842284611" expanded="true" signature="5342:5459" ph="INSERT INTO tblreviews... " />
+                <marker date="1519842284611" expanded="true" signature="5559:5676" ph="INSERT INTO tblreviews... " />
+                <marker date="1519842284611" expanded="true" signature="6790:7093" ph="INSERT INTO tblschools... " />
+                <marker date="1519842284611" expanded="true" signature="7646:7755" ph="UPDATE tblsc... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Core_d.php" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_d.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="310" column="44" lean-forward="true" selection-start-line="310" selection-start-column="44" selection-end-line="310" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="166" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,29 +109,61 @@
       <file leaf-file-name="factory.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/factory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1512">
-              <caret line="63" column="31" lean-forward="false" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+            <state relative-caret-position="258">
+              <caret line="116" column="29" lean-forward="false" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <file leaf-file-name="form-step.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/form-step.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/routing.js">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="6288">
+              <caret line="262" column="1" lean-forward="false" selection-start-line="262" selection-start-column="1" selection-end-line="262" selection-end-column="1" />
+              <folding>
+                <marker date="1519840679347" expanded="true" signature="77256:77279" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="77289:77328" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="77343:77566" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="77600:77700" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="77724:77792" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="77816:77848" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="77884:78133" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="78293:78588" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="78770:78807" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="78950:78977" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="78997:79059" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="79090:79156" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="79300:79687" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="79754:80181" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="80223:80343" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="80373:80408" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="80421:80448" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="80620:80664" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="80728:80861" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="80886:81015" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="81043:81166" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="81059:81164" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="81220:81243" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="81325:81371" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="81469:81591" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="81703:81882" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="81992:82218" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="82276:82353" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="82405:82482" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="82527:82576" ph="{...}" />
+                <marker date="1519840679347" expanded="true" signature="82655:82737" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,6 +196,9 @@
       <find>review-author</find>
       <find>detail-wrapper-header</find>
       <find>getAllSchools</find>
+      <find>listing-rating</find>
+      <find>general</find>
+      <find>fiel</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,29 +213,31 @@
         <option value="$PROJECT_DIR$/listing-detail.html" />
         <option value="$PROJECT_DIR$/api/api/users.php" />
         <option value="$PROJECT_DIR$/api/.htaccess" />
-        <option value="$PROJECT_DIR$/assets/css/colors/main.css" />
         <option value="$PROJECT_DIR$/thank-you.html" />
-        <option value="$PROJECT_DIR$/api/api/visitor.php" />
         <option value="$PROJECT_DIR$/thank-you-new-school.html" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/template1.html" />
         <option value="$PROJECT_DIR$/template2.html" />
-        <option value="$PROJECT_DIR$/template-footer-2.html" />
         <option value="$PROJECT_DIR$/template-footer-1.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/newSchool.html" />
         <option value="$PROJECT_DIR$/searchSchool.html" />
-        <option value="$PROJECT_DIR$/schoolDetails.html" />
         <option value="$PROJECT_DIR$/schoolleaderboard.html" />
         <option value="$PROJECT_DIR$/create-ad.html" />
         <option value="$PROJECT_DIR$/template-header-2.html" />
-        <option value="$PROJECT_DIR$/assets/js/factory.js" />
         <option value="$PROJECT_DIR$/template-header-1.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/search.html" />
         <option value="$PROJECT_DIR$/assets/js/routing.js" />
         <option value="$PROJECT_DIR$/landing.html" />
+        <option value="$PROJECT_DIR$/assets/css/colors/main.css" />
+        <option value="$PROJECT_DIR$/template-footer-2.html" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/assets/js/form-step.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/factory.js" />
+        <option value="$PROJECT_DIR$/schoolDetails.html" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/api/api/visitor.php" />
       </list>
     </option>
   </component>
@@ -227,7 +269,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,17 +315,360 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gafista" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OfficeManagementSystem" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets/js" />
+      <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/css/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/logo-white.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/js/routing.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/landing.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/newSchool.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/schoolDetails.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/schoolleaderboard.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/search.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/searchSchool.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/template-footer-1.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/ad-listing.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/.DS_Store</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/css/animation.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/css/colors/main.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/css/responsiveness.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/css/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/img/.DS_Store</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/img/ad.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/img/credit.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/img/logo-white.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/img/logo-white2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/img/logo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/img/passport.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/img/paypal.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/img/schoolhub.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/img/slider-1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/img/slider-2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/img/title-bg.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/angular-file-upload.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/angular-route.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/angular.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/app.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/custom-maps.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/custom.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/factory.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/form-step.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/gmap3.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/jQuery.style.switcher.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/jquery.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/routing.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/js/viewportchecker.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/animate/animate.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap-choosen/css/bootstrap-chosen.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap-choosen/css/chosen-sprite.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap-choosen/css/chosen-sprite@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap-choosen/js/chosen.jquery.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap-slider/bootstrap-slider.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap-slider/slider.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap/css/bootsnav.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap/css/bootstrap-select.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap/css/bootstrap.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap/fonts/glyphicons-halflings-regulard41d.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap/js/bootsnav.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap/js/bootstrap-select.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/bootstrap/js/bootstrap.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/date-dropper/datedropper.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/date-dropper/datedropper.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/date-dropper/src/datedropper.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/date-dropper/src/datedropper.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/date-dropper/src/datedropper.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/date-dropper/src/datedropper.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/date-dropper/src/datedropperd41d.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/dropzone/dropzone.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/dropzone/dropzone.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/fancybox/jquery.fancybox.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/fancybox/jquery.fancybox.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/font-awesome/css/font-awesome.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/font-awesome/fonts/fontawesome-webfont3e6e.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/font-awesome/fonts/fontawesome-webfont3e6e.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/font-awesome/fonts/fontawesome-webfont3e6e.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/font-awesome/fonts/fontawesome-webfont3e6e.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/font-awesome/fonts/fontawesome-webfont3e6e.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/font-awesome/fonts/fontawesome-webfontd41d.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/jquery-counter/js/jquery.counterup.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/jquery-counter/js/waypoints.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/jqueryadd/jqueryadd-count.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/line-icons/css/line-font.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/line-icons/fonts/et-line.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/line-icons/fonts/et-line.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/line-icons/fonts/et-line.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/line-icons/fonts/et-line.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/line-icons/fonts/et-lined41d.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/rating-js/jquery-rating.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/rating-js/jquery-rating.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/slick-slider/slick.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/slick-slider/slick.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/themify-icons/css/themify-icons.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/themify-icons/fonts/themify9f24.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/themify-icons/fonts/themify9f24.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/themify-icons/fonts/themify9f24.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/themify-icons/fonts/themify9f24.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/themify-icons/fonts/themifyd41d.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/time-dropper/timedropper.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/assets/plugins/time-dropper/timedropper.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/index.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/paystack/db.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/paystack/entry.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/paystack/inline.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad/paystack/paystack3.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/logo-white2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/privacy-policy.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ad-listing.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/921e8b7eb11743d7a39d2f4cf7ecdaa4d79f1443.jpeg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/Udemy_dashboard02.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/avatar.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/blog/blog-1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/blog/blog-2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/blog/blog-3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/blog/blog-4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/blog/blog-5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/blog/blog-6.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/blog/blog-7.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/blog/blog-8.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/art.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/business.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/documentry-2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/documentry.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/education.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/food-1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/food.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/instructional.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/place-2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/place-4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/shopping.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/slider-2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/sport.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/category/travel.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/footer-logo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/image-1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/image-2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/image-3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/image-4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/image-5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/maxresdefault.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/o-YOUNG-BLACK-KIDS-facebook.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/places/place-1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/places/place-2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/places/place-3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/places/place-4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/places/place-5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/places/place-6.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/places/place-7.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/places/slider-2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/slider-3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/slider-4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/tag-bg.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/team3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/team4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/user-1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/user-2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/assets/img/user-3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/create-ad.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/bootstrap.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/._fontawesome</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/._fonts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/._style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/._css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/._fonts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/css/._style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/css/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/fonts/._fontawesome-webfont-.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/fonts/._fontawesome-webfont-v=4.5.0.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/fonts/._fontawesome-webfont-v=4.5.0.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/fonts/._fontawesome-webfont-v=4.5.0.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/fonts/._fontawesome-webfont-v=4.5.0.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/fonts/._fontawesome-webfont-v=4.5.0.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/fonts/fontawesome-webfont-.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/fonts/fontawesome-webfont-v=4.5.0.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/fonts/fontawesome-webfont-v=4.5.0.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/fonts/fontawesome-webfont-v=4.5.0.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/fonts/fontawesome-webfont-v=4.5.0.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fontawesome/fonts/fontawesome-webfont-v=4.5.0.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fonts/._un-jzbwqt.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fonts/._un-jzbwqt.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fonts/._un-jzbwqt.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fonts/._un-jzbwqt.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fonts/un-jzbwqt.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fonts/un-jzbwqt.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fonts/un-jzbwqt.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/fonts/un-jzbwqt.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/icons/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/prettyphoto.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/6.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/bg/1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/bg/10.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/bg/2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/bg/3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/bg/5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/bg/6.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/bg/7.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/bg/8.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/bg/9.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/error.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/favicon.ico</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/loading.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/location.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/people.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/bootstrap.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/jquery.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/main.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/contact.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/flexslider/._flexslider.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/flexslider/flexslider.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/isotope/._isotope.pkgd.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/isotope/isotope.pkgd.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/jquery.animateNumber.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/jquery.appear.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/jquery.countdown.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/jquery.easing.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/jquery.inview.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/jquery.placeholder.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/jquery.prettyphoto.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/mc/._jquery.ketchup.all.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/mc/._main.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/mc/jquery.ketchup.all.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/mc/main.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/slick/._slick.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/slick/._slick.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/slick/slick.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/slick/slick.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/js/vendors/stellar.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/newjay.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -340,7 +724,11 @@
       <workItem from="1519479488422" duration="2306000" />
       <workItem from="1519553631843" duration="8802000" />
       <workItem from="1519611499660" duration="5012000" />
-      <workItem from="1519667848815" duration="62000" />
+      <workItem from="1519667848815" duration="1674000" />
+      <workItem from="1519723771586" duration="17522000" />
+      <workItem from="1519765168351" duration="82000" />
+      <workItem from="1519763189808" duration="12827000" />
+      <workItem from="1519808122660" duration="21627000" />
     </task>
     <task id="LOCAL-00001" summary="Angular routing and controllers">
       <created>1517036166611</created>
@@ -447,11 +835,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519225061433</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="New Search">
+      <created>1519667950442</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1519667950442</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175000000" />
+    <option name="totallyTimeSpent" value="228670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="85" y="151" width="1366" height="741" extended-state="6" />
@@ -460,12 +855,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -497,53 +892,16 @@
     <MESSAGE value="Successful message for new school" />
     <MESSAGE value="Average Rating&#10;Rating Stars" />
     <MESSAGE value="New Landing Page&#10;New Routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Landing Page&#10;New Routing" />
+    <MESSAGE value="New Search" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/newSchool.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schoolleaderboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2184">
-          <caret line="91" column="36" lean-forward="true" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/searchSchool.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thank-you.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1416">
@@ -576,9 +934,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -646,21 +1002,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/angular-route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/angular.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -671,20 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/colors/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7104">
-          <caret line="296" column="20" lean-forward="false" selection-start-line="296" selection-start-column="20" selection-end-line="296" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -702,38 +1030,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api/visitor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1968">
-          <caret line="112" column="29" lean-forward="false" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13488">
-          <caret line="562" column="0" lean-forward="false" selection-start-line="562" selection-start-column="0" selection-end-line="562" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template-footer-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template-footer-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schoolDetails.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="221" column="34" lean-forward="false" selection-start-line="221" selection-start-column="34" selection-end-line="221" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -797,9 +1097,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding>
-            <marker date="1519588460226" expanded="false" signature="1224:1231" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -807,7 +1104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="22" column="92" lean-forward="false" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="92" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,17 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="19" column="70" lean-forward="false" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newSchool.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" column="117" lean-forward="false" selection-start-line="23" selection-start-column="117" selection-end-line="23" selection-end-column="117" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,9 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="75" lean-forward="false" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -843,23 +1125,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/factory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="63" column="31" lean-forward="false" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,15 +1132,195 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/plugins/slick-slider/slick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="1003" column="6" lean-forward="true" selection-start-line="1003" selection-start-column="6" selection-end-line="1003" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/colors/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3504">
+          <caret line="146" column="17" lean-forward="false" selection-start-line="146" selection-start-column="17" selection-end-line="146" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10776">
+          <caret line="449" column="25" lean-forward="false" selection-start-line="449" selection-start-column="25" selection-end-line="449" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/angular-animate.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6288">
+          <caret line="262" column="1" lean-forward="false" selection-start-line="262" selection-start-column="1" selection-end-line="262" selection-end-column="1" />
+          <folding>
+            <marker date="1519840679347" expanded="true" signature="77256:77279" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="77289:77328" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="77343:77566" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="77600:77700" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="77724:77792" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="77816:77848" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="77884:78133" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="78293:78588" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="78770:78807" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="78950:78977" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="78997:79059" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="79090:79156" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="79300:79687" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="79754:80181" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="80223:80343" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="80373:80408" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="80421:80448" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="80620:80664" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="80728:80861" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="80886:81015" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="81043:81166" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="81059:81164" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="81220:81243" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="81325:81371" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="81469:81591" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="81703:81882" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="81992:82218" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="82276:82353" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="82405:82482" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="82527:82576" ph="{...}" />
+            <marker date="1519840679347" expanded="true" signature="82655:82737" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-footer-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="80" lean-forward="false" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newSchool.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="53" column="114" lean-forward="false" selection-start-line="53" selection-start-column="114" selection-end-line="53" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="138" column="7" lean-forward="false" selection-start-line="138" selection-start-column="7" selection-end-line="138" selection-end-column="7" />
+          <folding>
+            <marker date="1519840806996" expanded="true" signature="3989:5422" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/form-step.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_d.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="310" column="44" lean-forward="true" selection-start-line="310" selection-start-column="44" selection-end-line="310" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="24">
+          <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="166" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="116" column="29" lean-forward="false" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5645">
+          <caret line="321" column="45" lean-forward="false" selection-start-line="321" selection-start-column="45" selection-end-line="321" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api/visitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="159" column="25" lean-forward="true" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
+          <folding>
+            <marker date="1519842284611" expanded="true" signature="673:878" ph="SELECT id, S... tblschools" />
+            <marker date="1519842284611" expanded="true" signature="1184:1446" ph="SELECT id, S... tblschools" />
+            <marker date="1519842284611" expanded="true" signature="1757:2008" ph="SELECT id, S... tblschools" />
+            <marker date="1519842284611" expanded="true" signature="2322:2363" ph="SELECT id, C... tblcategory" />
+            <marker date="1519842284611" expanded="true" signature="2624:2665" ph="SELECT id, R... tblreviewtype" />
+            <marker date="1519842284611" expanded="true" signature="2963:3016" ph="SELECT repor... tblreport" />
+            <marker date="1519842284611" expanded="true" signature="3378:3610" ph="SELECT id, S... tblschools" />
+            <marker date="1519842284611" expanded="true" signature="3960:4067" ph="SELECT id, S... " />
+            <marker date="1519842284611" expanded="true" signature="4373:4396" ph="SELECT * FRO... tblreport" />
+            <marker date="1519842284611" expanded="true" signature="4944:5047" ph="INSERT INTO tblreviews... " />
+            <marker date="1519842284611" expanded="true" signature="4944:5061" ph="INSERT INTO tblreviews... " />
+            <marker date="1519842284611" expanded="true" signature="5137:5254" ph="INSERT INTO tblreviews... " />
+            <marker date="1519842284611" expanded="true" signature="5342:5459" ph="INSERT INTO tblreviews... " />
+            <marker date="1519842284611" expanded="true" signature="5559:5676" ph="INSERT INTO tblreviews... " />
+            <marker date="1519842284611" expanded="true" signature="6790:7093" ph="INSERT INTO tblschools... " />
+            <marker date="1519842284611" expanded="true" signature="7646:7755" ph="UPDATE tblsc... " />
+          </folding>
         </state>
       </provider>
     </entry>

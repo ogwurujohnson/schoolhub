@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="zxx" ng-app="schoolApp">
-	
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,24 +17,24 @@
 
     <!-- Bootstrap Core CSS -->
 	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-	
+
 	<!-- Bootstrap Select Option css -->
 	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-select.min.css">
-	
+
 	<!-- Slick Slider -->
     <link href="assets/plugins/slick-slider/slick.css" rel="stylesheet">
-	
+
     <!-- Icons -->
     <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet">
 	<link href="assets/plugins/themify-icons/css/themify-icons.css" rel="stylesheet">
 	<link href="assets/plugins/line-icons/css/line-font.css" rel="stylesheet">
-    
+
     <!-- Animate -->
     <link href="assets/plugins/animate/animate.css" rel="stylesheet">
-    
+
     <!-- Bootsnav -->
     <link href="assets/plugins/bootstrap/css/bootsnav.css" rel="stylesheet">
-    
+
     <!-- Custom style -->
     <link href="assets/css/style.css" rel="stylesheet">
 	<link href="assets/css/responsiveness.css" rel="stylesheet">
@@ -45,25 +45,26 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-   
+
 
     <script src="assets/js/angular.min.js"></script>
     <script src="assets/js/angular-route.js"></script>
+    <script src="assets/js/angular-animate.min.js"></script>
     <script src="assets/js/angular-file-upload.js"></script>
     <script src="assets/js/routing.js"></script>
     <script src="assets/js/factory.js"></script>
-	<script src="assets/js/form-step.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/form-step.js"></script>
 </head>
 <body>
-<div class="wrapper">  
+<div class="wrapper">
 			<!-- Start Navigation -->
 			<nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav">
-				<div class="container-fluid">         
+				<div class="container-fluid">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 						<i class="ti-align-left"></i>
 					</button>
-					
+
 					<!-- Start Header Navigation -->
 					<div class="navbar-header">
 						<a class="navbar-brand" href="index.html">
@@ -86,34 +87,53 @@
 						</ul>
 					</div>
 					<!-- /.navbar-collapse -->
-				</div>   
+				</div>
 			</nav>
 			</div>
 			<!-- End Navigation -->
 			<div class="clearfix"></div>
 <div ng-view=""></div>
 
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBcs1txzUMh0JOktl2ZkZZxi5VvIVTIKZw",
+        authDomain: "schoolhub-e4573.firebaseapp.com",
+        databaseURL: "https://schoolhub-e4573.firebaseio.com",
+        projectId: "schoolhub-e4573",
+        storageBucket: "schoolhub-e4573.appspot.com",
+        messagingSenderId: "296674236988"
+    };
+    firebase.initializeApp(config);
+
+    firebase.auth().languageCode = 'en';
+    // To apply the default browser preference instead of explicitly setting it.
+     firebase.auth().useDeviceLanguage();
+
+</script>
+
 
 <!-- START JAVASCRIPT -->
 			<!-- Jquery js-->
 			<script src="assets/js/jquery.min.js"></script>
-			
+
 			<!-- Bootstrap js-->
 			<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-			
+
 			<!-- Bootsnav js-->
 			<script src="assets/plugins/bootstrap/js/bootsnav.js"></script>
 			<script src="assets/js/viewportchecker.js"></script>
-			
+
 			<!-- Slick Slider js-->
 			<script src="assets/plugins/slick-slider/slick.js"></script>
-			
+
 			<!-- counter js-->
 			<script src="assets/plugins/jquery-counter/js/waypoints.min.js"></script>
             <script src="assets/plugins/jquery-counter/js/jquery.counterup.min.js"></script>
-			
+
 			<script src="assets/js/jQuery.style.switcher.js"></script>
-			
+
 			<!-- Custom Js -->
 			<script src="assets/js/custom.js"></script>
 </body>

@@ -103,16 +103,100 @@ app.controller('reviewController', function($scope, schoolhub, $routeParams, $ro
     var controller = this;
     var schoolId = $routeParams.id;
 
+    var vm = this;
+    vm.step = "one";
+    vm.stepOne = stepOne;
+    vm.stepTwo = stepTwo;
+    vm.stepThree = stepThree;
+    vm.stepFour = stepFour;
+    vm.stepFive = stepFive;
+    vm.stepSix = stepSix;
+    vm.stepSeven = stepSeven;
+    vm.complete = complete;
+    var reviewstars = [];
+
+    function stepOne() {
+        vm.step = "one";
+    }
+
+    function stepTwo() {
+        vm.step = "two";
+    }
+
+    function stepThree() {
+        vm.step = "three";
+    }
+
+    function stepFour() {
+        vm.step = "four";
+    }
+
+    function stepFive() {
+        vm.step = "five";
+    }
+
+    function stepSix() {
+        vm.step = "six";
+        document.getElementById('recaptchaDiv').innerHTML = "";
+    }
+
+    function stepSeven() {
+        document.getElementById('recaptchaDiv').innerHTML = "";
+        vm.step = "seven";
+        window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptchaDiv', {
+            'size': 'invisible',
+            'callback': function(response) {
+                console.log('reCAPTCHA solved, allow signInWithPhoneNumber.');
+            }
+        });
+        var phoneNumber = '+234'+vm.reviewphonenumber;
+        var appVerifier = window.recaptchaVerifier;
+        firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
+            .then(function (confirmationResult) {
+                // SMS sent. Prompt user to type the code from the message, then sign the
+                // user in with confirmationResult.confirm(code).
+                window.confirmationResult = confirmationResult;
+            }).catch(function (error) {
+            console.log('Error; SMS not sent');
+            console.log(error);
+            alert('Oops! An error ocurred. Re-enter phone number to receive verification code.');
+            vm.stepSix();
+        });
+    }
+
+    function complete(){
+        document.getElementById('recaptchaDiv').innerHTML = "";
+        var code = vm.reviewotp;
+        confirmationResult.confirm(code).then(function (result) {
+            // User signed in successfully.
+            controller.addReview();
+            alert('Review Successful!');
+        }).catch(function (error) {
+            // User couldn't sign in (bad verification code?)
+            alert('Wrong Verification Code');
+        });
+    }
+
     controller.addReview = function(){
-        if($scope.reviewstars == null) $scope.reviewstars = 0;
-        this.newReview = {
-            "reviewtype":$scope.schoolreviewtype,
-            "reviewdescription":$scope.schoolreviewdescription,
-            "stars":$scope.reviewstars
+        vm.reviewfacilitystars = vm.reviewfacilitystars ==  null ? 0 : vm.reviewfacilitystars;
+        vm.reviewacademicstars = vm.reviewacademicstars ==  null ? 0 : vm.reviewacademicstars;
+        vm.reviewteacherstars = vm.reviewteacherstars ==  null ? 0 : vm.reviewteacherstars;
+        vm.reviewenvironmentstars = vm.reviewenvironmentstars ==  null ? 0 : vm.reviewenvironmentstars;
+
+        var reviewstars = {
+            "Facilities":vm.reviewfacilitystars,
+            "Academic":vm.reviewacademicstars,
+            "Quality":vm.reviewteacherstars,
+            "Learning":vm.reviewenvironmentstars
         };
-        console.log(this.newReview);
+
+        this.newReview = {
+            "reviewdescription":vm.schoolreviewdescription,
+            "reviewstars":reviewstars,
+            "reviewphonenumber":vm.reviewphonenumber
+        };
         schoolhub.addReview(this.newReview, schoolId);
-        controller.updateReview();
+        //controller.updateReview();
     };
 
     controller.updateReview = function() {

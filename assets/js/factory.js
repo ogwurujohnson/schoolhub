@@ -112,6 +112,7 @@ app.factory('schoolhub', function ($http, $rootScope) {
     };
     schoolhubObject.addReview = function (formData, schoolId) {
         $http.post('api/visitor/addReview/'+schoolId, formData).then(function (data) {
+            console.log(data);
             return true;
         }, function (error) {
             console.log(error);

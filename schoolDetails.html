@@ -10,7 +10,7 @@
 							<!-- =====School Basic Details ====== -->	
 							<li><div class="buttons medium button-plain "><i class="fa fa-phone"></i>{{singleSchool[0][6]}}</div></li>
 							<li><div class="buttons medium button-plain "><i class="fa fa-map-marker"></i>{{singleSchool[0][3]+", "+singleSchool[0][4]}}</div></li>
-							<li><div class="inside-rating buttons listing-rating theme-btn button-plain"><span class="value">{{singleSchool[0][9]+" reviews"}}</span></div></li>
+							<li><div class="inside-rating buttons listing-rating button-plain"><span class="value">{{singleSchool[0][9]+" reviews"}}</span></div></li>
 							<li><a class="buttons btn-outlined medium add-review"><i class="fa fa-comments-o"></i><span class="hidden-xs">Add review</span></a></li>
 							</ul>
 						</div>
@@ -95,62 +95,232 @@
 								<div class="detail-wrapper-header">
 									<h4>Rate & Write Reviews</h4>
 								</div>
-								<form ng-submit="reviewCtrl.addReview()">
-								<div class="detail-wrapper-body">
-                                    <select data-placeholder="Choose Review Topic" class="form-control chosen-select" tabindex="2" required ng-model="schoolreviewtype">
-                                        <option value="">Select Review Topic</option>
-                                        <option ng-repeat="type in reviewTypes" value="{{type[0]}}">
-                                            {{type[1]}}
-                                        </option>
-                                    </select>
-									<div class="row">
-										<div class="col-sm-12">
-											<textarea class="form-control height-110" placeholder="Tell us your experience..." required ng-model="schoolreviewdescription"></textarea>
-										</div>
-									</div>
-									<div class="row mrg-bot-10">
-									<div class="col-md-12">
-											<div class="rating">
-												<label>
-													<input type="radio" name="stars" value="1" ng-model="reviewstars"/>
-													<span class="icon">★</span>
-												</label>
-												<label>
-													<input type="radio" name="stars" value="2" ng-model="reviewstars"/>
-													<span class="icon">★</span>
-													<span class="icon">★</span>
-												</label>
-												<label>
-													<input type="radio" name="stars" value="3" ng-model="reviewstars"/>
-													<span class="icon">★</span>
-													<span class="icon">★</span>
-													<span class="icon">★</span>
-												</label>
-												<label>
-													<input type="radio" name="stars" value="4" ng-model="reviewstars"/>
-													<span class="icon">★</span>
-													<span class="icon">★</span>
-													<span class="icon">★</span>
-													<span class="icon">★</span>
-												</label>
-												<label>
-													<input type="radio" name="stars" value="5" ng-model="reviewstars"/>
-													<span class="icon">★</span>
-													<span class="icon">★</span>
-													<span class="icon">★</span>
-													<span class="icon">★</span>
-													<span class="icon">★</span>
-												</label>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-12">
-											<button type="submit" class="btn theme-btn">Next</button>
-										</div>
-									</div>
-								</div>
-							</form>
+								<form id="frmAddReview">
+                                    <div ng-switch="reviewCtrl.step">
+                                        <fieldset class="stepone" ng-switch-when="one"><div class="detail-wrapper-body">
+                                            <h5>School Facilities</h5>
+                                            <div class="row mrg-bot-10">
+                                                <div class="col-md-12">
+                                                    <div class="rating">
+                                                        <label>
+                                                            <input type="radio" name="starsfacility" value="1" ng-model="reviewCtrl.reviewfacilitystars" required/>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="starsfacility" value="2" ng-model="reviewCtrl.reviewfacilitystars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="starsfacility" value="3" ng-model="reviewCtrl.reviewfacilitystars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="starsfacility" value="4" ng-model="reviewCtrl.reviewfacilitystars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="starsfacility" value="5" ng-model="reviewCtrl.reviewfacilitystars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button type="submit" class="btn theme-btn btnNext" ng-click="reviewCtrl.stepTwo()">Next</button>
+                                                </div>
+                                            </div>
+                                        </div></fieldset>
+                                        <fieldset class="steptwo" ng-switch-when="two"><div class="detail-wrapper-body">
+                                            <h5>Academic Performance</h5>
+                                            <div class="row mrg-bot-10">
+                                                <div class="col-md-12">
+                                                    <div class="rating">
+                                                        <label>
+                                                            <input type="radio" name="academicstars" value="1" ng-model="reviewCtrl.reviewacademicstars" required/>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="academicstars" value="2" ng-model="reviewCtrl.reviewacademicstars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="academicstars" value="3" ng-model="reviewCtrl.reviewacademicstars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="academicstars" value="4" ng-model="reviewCtrl.reviewacademicstars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="academicstars" value="5" ng-model="reviewCtrl.reviewacademicstars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button type="button" class="btn theme-btn" ng-click="reviewCtrl.stepOne()">Prev</button>
+                                                    <button type="submit" class="btn theme-btn btn-next" ng-click="reviewCtrl.stepThree()">Next</button>
+                                                </div>
+                                            </div>
+                                        </div></fieldset>
+                                        <fieldset class="stepthree" ng-switch-when="three"><div class="detail-wrapper-body">
+                                            <h5>Quality Of Teachers</h5>
+                                            <div class="row mrg-bot-10">
+                                                <div class="col-md-12">
+                                                    <div class="rating">
+                                                        <label>
+                                                            <input type="radio" name="teacherstars" value="1" ng-model="reviewCtrl.reviewteacherstars" required/>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="teacherstars" value="2" ng-model="reviewCtrl.reviewteacherstars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="teacherstars" value="3" ng-model="reviewCtrl.reviewteacherstars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="teacherstars" value="4" ng-model="reviewCtrl.reviewteacherstars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="teacherstars" value="5" ng-model="reviewCtrl.reviewteacherstars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button type="button" class="btn theme-btn" ng-click="reviewCtrl.stepTwo()">Prev</button>
+                                                    <button type="submit" class="btn theme-btn" ng-click="reviewCtrl.stepFour()">Next</button>
+                                                </div>
+                                            </div>
+                                        </div></fieldset>
+                                        <fieldset class="stepfour" ng-switch-when="four"><div class="detail-wrapper-body">
+                                            <h5>Learning Environment</h5>
+                                            <div class="row mrg-bot-10">
+                                                <div class="col-md-12">
+                                                    <div class="rating">
+                                                        <label>
+                                                            <input type="radio" name="environmentstars" value="1" ng-model="reviewCtrl.reviewenvironmentstars" required/>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="environmentstars" value="2" ng-model="reviewCtrl.reviewenvironmentstars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="environmentstars" value="3" ng-model="reviewCtrl.reviewenvironmentstars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="environmentstars" value="4" ng-model="reviewCtrl.reviewenvironmentstars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="environmentstars" value="5" ng-model="reviewCtrl.reviewenvironmentstars" required/>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                            <span class="icon">★</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button type="button" class="btn theme-btn" ng-click="reviewCtrl.stepThree()">Prev</button>
+                                                    <button type="submit" class="btn theme-btn" ng-click="reviewCtrl.stepFive()">Next</button>
+                                                </div>
+                                            </div>
+                                        </div></fieldset>
+                                        <fieldset class="stepfive" ng-switch-when="five"><div class="detail-wrapper-body">
+                                            <h5>Leave a comment</h5>
+                                            <div class="row mrg-bot-10">
+                                                <div class="col-md-12">
+                                                    <textarea placeholder="Tell us your experience" class="form-control" ng-model="reviewCtrl.schoolreviewdescription"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button type="button" class="btn theme-btn" ng-click="reviewCtrl.stepFour()">Prev</button>
+                                                    <button type="submit" class="btn theme-btn" ng-click="reviewCtrl.stepSix()">Next</button>
+                                                </div>
+                                            </div>
+                                        </div></fieldset>
+                                        <fieldset class="stepsix" ng-switch-when="six"><div class="detail-wrapper-body">
+                                            <h5>Verify Review</h5>
+                                            <div class="row mrg-bot-10">
+                                                <div class="col-md-12">
+                                                    <input name="phonenumber" class="form-control" type="number" ng-model="reviewCtrl.reviewphonenumber" required placeholder="Enter Phone Number"/>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button type="button" class="btn theme-btn" ng-click="reviewCtrl.stepFive()">Prev</button>
+                                                    <button id="btn-phone" type="submit" class="btn theme-btn" ng-click="reviewCtrl.stepSeven()">Next</button>
+                                                </div>
+                                            </div>
+                                        </div></fieldset>
+                                        <fieldset class="stepseven" ng-switch-when="seven"><div class="detail-wrapper-body">
+                                            <h5>One-Time Password</h5>
+                                            <div class="row mrg-bot-10">
+                                                <div class="col-md-12">
+                                                    <input name="otp" class="form-control" type="text" ng-model="reviewCtrl.reviewotp" required placeholder="Enter OTP code" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button type="button" class="btn theme-btn" ng-click="reviewCtrl.stepSix()">Prev</button>
+                                                    <button type="submit" class="btn theme-btn" ng-click="reviewCtrl.complete()">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div></fieldset>
+                                    </div>
+                                    <div id="recaptchaDiv"></div>
+							    </form>
 							</div>
 						</div>
 						<!-- End: Listing Detail Wrapper -->
@@ -188,7 +358,6 @@
 												<li><a>Academic Perfomance<span class="badge bg-a">0</span></a></li>
 												<li><a>Quality of Teachers<span class="badge bg-d">0</span></a></li>
 												<li><a>Learning Environment<span class="badge bg-l">0</span></a></li>
-                                                <li><a>General<span class="badge bg-l">0</span></a></li>
 											</ul>
 										</div>
 									</div>
