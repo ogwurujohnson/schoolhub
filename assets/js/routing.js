@@ -18,6 +18,9 @@ app.config(function ($routeProvider) {
     }).when('/viewAdvert',{
         templateUrl:'ad-listing.html',
         controller:'mainController'
+	}).when('/privacy',{
+        templateUrl:'privacy-policy.html',
+        controller:'mainController'
     }).when('/searchSchool',{
         templateUrl:'searchSchool.html',
         controller:'schoolController'
