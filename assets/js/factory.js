@@ -88,7 +88,7 @@ app.factory('schoolhub', function ($http, $rootScope) {
             $rootScope.schoolreview = data.data;
             var parseId = function(school){
                 for(var i = 0; i < school.length; i++){
-                    school[i][3] = parseInt(school[i][3]);
+                    school[i]["Rating"] = parseInt(school[i]["Rating"]);
                 }
                 return school;
             };
@@ -113,6 +113,24 @@ app.factory('schoolhub', function ($http, $rootScope) {
     schoolhubObject.addReview = function (formData, schoolId) {
         $http.post('api/visitor/addReview/'+schoolId, formData).then(function (data) {
             console.log(data);
+            return true;
+        }, function (error) {
+            console.log(error);
+            return false;
+        });
+    };
+    schoolhubObject.checkReviewer = function(formData, schoolId){
+        $http.post('api/visitor/checkReviewer/'+schoolId, formData).then(function (data) {
+            $rootScope.isReviewed = data.data;
+            return true;
+        }, function (error) {
+            console.log(error);
+            return false;
+        });
+    };
+    schoolhubObject.getTopicRating = function (schoolId) {
+        $http.get('api/visitor/getTopicRating/'+schoolId).then(function (data) {
+            $rootScope.topicRating = data.data;
             return true;
         }, function (error) {
             console.log(error);

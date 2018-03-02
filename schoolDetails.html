@@ -73,16 +73,16 @@
 																	Anonymous
 																</div>
 																<div class="review-comment-stars">
-																	<i class="fa fa-star" ng-repeat="i in getNumber(reviews[3])"></i>
+																	<i class="fa fa-star" ng-repeat="i in getNumber(reviews['Rating'])"></i>
 																</div>
 															</div>
 															<div class="review-comment-date">
 																<div class="review-date">
-																	<span>{{reviews[5]}}</span>
+																	<span>{{reviews["Date"]}}</span>
 																</div>
 															</div>
 														</div>
-														<p>{{reviews[2]}}</p>
+														<p>{{reviews["Comment"]}}</p>
 													</div>
 												</div>
 											</div>
@@ -354,10 +354,10 @@
 									<div class="widget-boxed-body padd-top-10 padd-bot-0">
 										<div class="side-list">
 											<ul class="category-list">
-												<li><a>Facilities<span class="badge bg-g">0</span></a></li>
-												<li><a>Academic Perfomance<span class="badge bg-a">0</span></a></li>
-												<li><a>Quality of Teachers<span class="badge bg-d">0</span></a></li>
-												<li><a>Learning Environment<span class="badge bg-l">0</span></a></li>
+												<li><a>Facilities<span class="badge bg-g">{{topicRating["Facilities"]}}★ rating</span></a></li>
+												<li><a>Academic Perfomance<span class="badge bg-a">{{topicRating["Academic"]}}★ rating</span></a></li>
+												<li><a>Quality of Teachers<span class="badge bg-d">{{topicRating["Quality"]}}★ rating</span></a></li>
+												<li><a>Learning Environment<span class="badge bg-l">{{topicRating["Learning"]}}★ rating</span></a></li>
 											</ul>
 										</div>
 									</div>

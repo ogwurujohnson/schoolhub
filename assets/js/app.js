@@ -99,9 +99,11 @@ app.controller('singleSchoolController', function($scope,$routeParams,schoolhub,
 });
 
 app.controller('reviewController', function($scope, schoolhub, $routeParams, $rootScope, $window){
-    schoolhub.getAllReviewTypes();
     var controller = this;
     var schoolId = $routeParams.id;
+
+    schoolhub.getAllReviewTypes();
+    schoolhub.getTopicRating(schoolId);
 
     var vm = this;
     vm.step = "one";
@@ -113,7 +115,6 @@ app.controller('reviewController', function($scope, schoolhub, $routeParams, $ro
     vm.stepSix = stepSix;
     vm.stepSeven = stepSeven;
     vm.complete = complete;
-    var reviewstars = [];
 
     function stepOne() {
         vm.step = "one";
@@ -142,27 +143,40 @@ app.controller('reviewController', function($scope, schoolhub, $routeParams, $ro
 
     function stepSeven() {
         document.getElementById('recaptchaDiv').innerHTML = "";
-        vm.step = "seven";
-        window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptchaDiv', {
-            'size': 'invisible',
-            'callback': function(response) {
-                console.log('reCAPTCHA solved, allow signInWithPhoneNumber.');
+        if(vm.reviewphonenumber){
+            var reviewer = {
+              "phone":vm.reviewphonenumber
+            };
+            schoolhub.checkReviewer(reviewer, schoolId);
+            if($rootScope.isReviewed["success"]){
+                alert('Sorry! You cannot review a school twice.');
+                vm.step = "six";
+            }else{
+                window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptchaDiv', {
+                    'size': 'invisible',
+                    'callback': function(response) {
+                        console.log('reCAPTCHA solved, allow signInWithPhoneNumber.');
+                    }
+                });
+                var phoneNumber = '+234'+vm.reviewphonenumber;
+                var appVerifier = window.recaptchaVerifier;
+                firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
+                    .then(function (confirmationResult) {
+                        // SMS sent. Prompt user to type the code from the message, then sign the
+                        // user in with confirmationResult.confirm(code).
+                        window.confirmationResult = confirmationResult;
+                        vm.step = "seven";
+                    }).catch(function (error) {
+                    console.log('Error; SMS not sent');
+                    console.log(error);
+                    alert('Oops! An error ocurred. Please check your network and try again.');
+                    $window.location.reload();
+                });
             }
-        });
-        var phoneNumber = '+234'+vm.reviewphonenumber;
-        var appVerifier = window.recaptchaVerifier;
-        firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
-            .then(function (confirmationResult) {
-                // SMS sent. Prompt user to type the code from the message, then sign the
-                // user in with confirmationResult.confirm(code).
-                window.confirmationResult = confirmationResult;
-            }).catch(function (error) {
-            console.log('Error; SMS not sent');
-            console.log(error);
-            alert('Oops! An error ocurred. Please check your network and try again.');
-            $window.location.reload();
-            vm.stepSix();
-        });
+        }else{
+            alert('Empty Phone Number!');
+            vm.step = "six";
+        }
     }
 
     function complete(){
@@ -199,12 +213,12 @@ app.controller('reviewController', function($scope, schoolhub, $routeParams, $ro
 
         console.log(this.newReview);
         schoolhub.addReview(this.newReview, schoolId);
-        //controller.updateReview();
+        controller.updateReview();
     };
 
     controller.updateReview = function() {
         this.reviewData = {
-            "totalrating": parseInt($rootScope.singleSchool[0][8]) + parseInt($scope.reviewstars),
+            "totalrating": parseInt($rootScope.singleSchool[0][8]) + parseInt(vm.reviewfacilitystars) + parseInt(vm.reviewacademicstars) + parseInt(vm.reviewteacherstars)  + parseInt(vm.reviewenvironmentstars),
             "ratecount": parseInt($rootScope.singleSchool[0][9]) + 1
         };
         console.log(this.reviewData);
