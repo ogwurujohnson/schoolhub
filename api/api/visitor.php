@@ -106,7 +106,7 @@ class visitor
     public function getparticularschooldetails($schoolid = '')
     {
         $id = $schoolid;
-        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status, Total_Rating, Rate_Count, Description, Opening_Time, Closing_Time, Total_Rating / Rate_Count AS Average_Rating FROM tblschools WHERE tblschools.id = '$id'";
+        $sql = "SELECT id, School_Name, Email, Address, Country, Image, Phone_Number, Status, Total_Rating, Rate_Count, Description, Opening_Time, Closing_Time, Total_Rating / (Rate_Count * 4) AS Average_Rating FROM tblschools WHERE tblschools.id = '$id'";
         $res = mysqli_query($this->con, $sql);
         $result = [];
         while ($row = mysqli_fetch_row($res)) {
@@ -119,11 +119,18 @@ class visitor
     public function getschoolreview($schoolid = '')
     {
         $id = $schoolid;
-        $sql = "SELECT id, School_Id, Comment, Rating, Review_Type, Date FROM tblreviews WHERE tblreviews.School_Id = '$id'";
-        $res = mysqli_query($this->con, $sql);
+        $sql = "SELECT DISTINCT Comment FROM tblreviews WHERE tblreviews.School_Id = '$id' ORDER BY id ASC";
+        $res = mysqli_query($this->con, $sql) or die(mysqli_error($this->con));
         $result = [];
+        $count = 0;
         while ($row = mysqli_fetch_row($res)) {
-            $result[] = $row;
+            $sql1 = "SELECT Comment, sum(Rating)/4 as ratingSum, Date FROM tblreviews WHERE Comment = '$row[0]'";
+            $res1 = mysqli_query($this->con,$sql1);
+            $row1 = mysqli_fetch_assoc($res1);
+            $result[$count]["Comment"] = $row1["Comment"];
+            $result[$count]["Rating"] = $row1["ratingSum"];
+            $result[$count]["Date"] = $row1["Date"];
+            $count++;
         }
         header('Content-Type:application/json');
         echo json_encode($result);
@@ -139,6 +146,66 @@ class visitor
         }
         header('Content-Type:application/json');
         echo json_encode($result);
+    }
+
+    public function checkReviewer($schoolid = ''){
+        $response = array();
+        $data = json_decode(file_get_contents("php://input"), true);
+        $phone = $data["phone"];
+        echo $phone;
+        $sql = "SELECT id FROM tblusers WHERE School_Id = '$schoolid' AND Phone_Number = '$phone'";
+        $res = mysqli_query($this->con, $sql);
+        if(mysqli_num_rows($res) > 0){
+            $response["success"] = true;
+        }else{
+            $response["success"] = false;
+        }
+        echo json_encode($response);
+    }
+
+    public function getTopicRating($schoolid = ''){
+        $response = array();
+        $sql = "SELECT Rating FROM tblreviews WHERE School_Id = '$schoolid' AND Review_Type = 1";
+        $res = mysqli_query($this->con, $sql);
+        $count = 0;
+        $sumrating = 0;
+        while ($row = mysqli_fetch_row($res)){
+            $sumrating += $row[0];
+            $count++;
+        }
+        $response["Facilities"] = $sumrating/$count;
+        $response["Facilities"] = $response["Facilities"] == "" ? 0 : $response["Facilities"];
+        $sql = "SELECT Rating FROM tblreviews WHERE School_Id = '$schoolid' AND Review_Type = 2";
+        $res = mysqli_query($this->con, $sql);
+        $count = 0;
+        $sumrating = 0;
+        while ($row = mysqli_fetch_row($res)){
+            $sumrating += $row[0];
+            $count++;
+        }
+        $response["Academic"] = $sumrating/$count;
+        $response["Academic"] = $response["Academic"] == "" ? 0 : $response["Academic"];
+        $sql = "SELECT Rating FROM tblreviews WHERE School_Id = '$schoolid' AND Review_Type = 3";
+        $res = mysqli_query($this->con, $sql);
+        $count = 0;
+        $sumrating = 0;
+        while ($row = mysqli_fetch_row($res)){
+            $sumrating += $row[0];
+            $count++;
+        }
+        $response["Quality"] = $sumrating/$count;
+        $response["Quality"] = $response["Quality"] == "" ? 0 : $response["Quality"];
+        $sql = "SELECT Rating FROM tblreviews WHERE School_Id = '$schoolid' AND Review_Type = 4";
+        $res = mysqli_query($this->con, $sql);
+        $count = 0;
+        $sumrating = 0;
+        while ($row = mysqli_fetch_row($res)){
+            $sumrating += $row[0];
+            $count++;
+        }
+        $response["Learning"] = $sumrating/$count;
+        $response["Learning"] = $response["Learning"] == "" ? 0 : $response["Learning"];
+        echo json_encode($response);
     }
 
     public function addreview($schoolid = '')
@@ -166,7 +233,13 @@ class visitor
                     $sql = "INSERT INTO tblreviews (School_Id, Comment, Rating, Review_Type) VALUES ('$schoolid', '$description', '$learning', '4')";
                     $res = mysqli_query($this->con,$sql);
                     if($res){
-                        $response['success'] = true;
+                        $sql = "INSERT INTO tblusers (School_Id, Phone_Number) VALUES ('$schoolid', '$phone')";
+                        $res = mysqli_query($this->con,$sql);
+                        if($res){
+                            $response['success'] = true;
+                        }else{
+                            $response['success'] = false;
+                        }
                     }else{
                         $response['success'] =false;
                     }
@@ -176,7 +249,10 @@ class visitor
             }else{
                 $response['success'] =false;
             }
+        }else{
+            $response['success'] =false;
         }
+        echo json_encode($response);
     }
 
     public function addNewSchool()
