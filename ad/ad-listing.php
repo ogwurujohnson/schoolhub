@@ -156,11 +156,11 @@
 							</div>
 						</div>
 						<!-- End Filter Option -->
-						
+					
 						<!-- Start All Ad List -->
 						<?php
 								require('paystack/db.php');
-								$query = "select tbladverts.ad_title,tbladverts.schoolid,tblschools.School_Name,tbladverts.date,tbladverts.ad_duration from tbladverts, tblschools where tblschools.id = tbladverts.schoolid";
+								$query = "select tbladverts.id,tbladverts.ad_title,tbladverts.schoolid,tblschools.School_Name,tbladverts.date,tbladverts.ad_duration from tbladverts, tblschools where tblschools.id = tbladverts.schoolid";
 								$res = mysqli_query($conn, $query);
 						?>
 						<div class="row">
@@ -173,6 +173,7 @@
 											$schoolname = $row['School_Name'];
 											$title = $row['ad_title'];
 											$date = $row['date'];
+											$id = $row['id'];
 											echo '<li>
 												<div class="small-listing-box light-gray">
 													<div class="small-list-img"></div>
@@ -181,7 +182,7 @@
 														<p><a href="#" title="Food & restaurant">'.$title.'</a> |date published:'.$date.'</p>
 													</div>
 													<div class="small-list-action">
-														<a href="#" class="light-gray-btn btn-square" data-placement="top" data-toggle="tooltip" title="View Ad"><i class="glyphicon glyphicon-eye-open"></i></a>
+														<a href="ad-detail.php?id='.$id.'" class="light-gray-btn btn-square" data-placement="top" data-toggle="tooltip" title="View Ad"><i class="glyphicon glyphicon-eye-open"></i></a>
 														
 													</div>
 												</div>
@@ -209,6 +210,28 @@
 				</div>
 			</footer>
 			<!-- ================ End Footer Section ======================= -->
+			<!-- START JAVASCRIPT -->
+			<!-- Jquery js-->
+			<script src="assets/js/jquery.min.js"></script>
+			
+			<!-- Bootstrap js-->
+			<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+			
+			<!-- Slick Slider js-->
+			<script src="assets/plugins/slick-slider/slick.js"></script>
+			
+			<!-- counter js-->
+			<script src="assets/plugins/jquery-counter/js/waypoints.min.js"></script>
+            <script src="assets/plugins/jquery-counter/js/jquery.counterup.min.js"></script>
+			
+			<!-- Bootsnav js-->
+			<script src="assets/plugins/bootstrap/js/bootsnav.js"></script>
+			<script src="assets/js/viewportchecker.js"></script>
+			
+			<script src="assets/js/jQuery.style.switcher.js"></script>
+			
+			<!-- Custom Js -->
+			<script src="assets/js/custom.js"></script>
 			
 			
 			
